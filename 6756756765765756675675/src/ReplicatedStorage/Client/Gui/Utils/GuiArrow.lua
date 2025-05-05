@@ -1,0 +1,102 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- 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
+
+local v1 = game:GetService("Players")
+local v2 = game:GetService("RunService")
+local v3 = {}
+local u4 = Instance.new("Frame")
+u4.Name = "Arrow"
+u4.AnchorPoint = Vector2.new(0.5, 0.5)
+u4.Size = UDim2.fromOffset(75, 75)
+u4.BackgroundTransparency = 1
+u4.ZIndex = 100
+local v5 = Instance.new("ImageLabel")
+v5.Name = "Label"
+v5.BackgroundTransparency = 1
+v5.ImageColor3 = Color3.fromRGB(255, 34, 34)
+v5.Image = "rbxassetid://99766717584105"
+v5.Size = UDim2.fromScale(1, 1)
+v5.Parent = u4
+local v6 = v5:Clone()
+v6.AnchorPoint = Vector2.one / 2
+v6.Position = UDim2.fromScale(0.5, 0.5)
+v6.Size = UDim2.fromScale(2, 2)
+v6.ImageTransparency = 0.65
+v6.Image = "http://www.roblox.com/asset/?id=9476348999"
+v6.ImageColor3 = Color3.new()
+v6.ZIndex = -1
+v6.Parent = u4
+local _ = v1.LocalPlayer.PlayerGui.ScreenGui
+local u7 = {}
+function v3.Add(_, p8, p9, p10) --[[Anonymous function at line 60]]
+    --[[
+    Upvalues:
+        [1] = u7
+        [2] = u4
+    --]]
+    if not u7[p8] then
+        local v11 = p9 or -25
+        local v12 = -v11
+        local v13 = math.rad(v12)
+        local v14 = u4:Clone()
+        local v15 = Vector2.new
+        local v16 = v13 + 3.141592653589793
+        local v17 = (math.sin(v16) + 1) / 2
+        local v18 = v13 + 3.141592653589793
+        local v19 = v15(v17, (math.cos(v18) + 1) / 2)
+        v14.Label.Rotation = v11
+        v14.AnchorPoint = Vector2.new((math.sin(v13) + 1) / 2, (math.cos(v13) + 1) / 2)
+        v14.Position = UDim2.fromScale(v19.X, v19.Y)
+        v14.Parent = p8
+        u7[p8] = {
+            ["Angle"] = v13,
+            ["Arrow"] = v14,
+            ["Origin"] = v19,
+            ["Tag"] = p10 or "generic"
+        }
+        return v14
+    end
+end
+function v3.Remove(_, p20) --[[Anonymous function at line 89]]
+    --[[
+    Upvalues:
+        [1] = u7
+    --]]
+    local v21 = u7[p20]
+    if v21 then
+        v21.Arrow:Destroy()
+        u7[p20] = nil
+    end
+end
+function v3.ClearAll(_, p22) --[[Anonymous function at line 95]]
+    --[[
+    Upvalues:
+        [1] = u7
+    --]]
+    for v23, v24 in u7 do
+        if v24.Tag == p22 or not p22 then
+            local v25 = u7[v23]
+            if v25 then
+                v25.Arrow:Destroy()
+                u7[v23] = nil
+            end
+        end
+    end
+end
+v2.Heartbeat:Connect(function() --[[Anonymous function at line 104]]
+    --[[
+    Upvalues:
+        [1] = u7
+    --]]
+    local v26 = os.clock() * 3
+    local v27 = math.sin(v26)
+    local v28 = math.abs(v27) * 30
+    for _, v29 in u7 do
+        local v30 = (v29.Origin.X - 0.5) * 2
+        local v31 = (v29.Origin.Y - 0.5) * 2
+        v29.Arrow.Position = UDim2.new(v29.Origin.X, v28 * v30, v29.Origin.Y, v28 * v31)
+    end
+end)
+return v3

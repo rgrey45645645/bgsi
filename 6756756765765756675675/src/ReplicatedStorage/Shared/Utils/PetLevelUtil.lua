@@ -1,0 +1,104 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- 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
+
+local v1 = game:GetService("ReplicatedStorage")
+require(v1.Shared.Types)
+local u2 = require(v1.Shared.Data.Pets)
+local v3 = require(v1.Shared.Constants)
+local u4 = {}
+local u5 = v3.RarityXPRequired
+local u6 = v3.PetMaximumLevel
+local function u13(p7, p8, p9) --[[Anonymous function at line 45]]
+    if p9 == 0 then
+        return 1
+    end
+    for v10 = p8, 1, -1 do
+        local v11 = ((v10 - 1) / (p8 - 1)) ^ 2 * p7 / 5
+        local v12 = math.ceil(v11) * 5
+        if math.clamp(v12, 0, p7) <= p9 then
+            return v10
+        end
+    end
+    return 1
+end
+function u4.GetLevelFromXP(_, p14, p15) --[[Anonymous function at line 68]]
+    --[[
+    Upvalues:
+        [1] = u2
+        [2] = u13
+        [3] = u5
+        [4] = u6
+    --]]
+    local v16 = u2[p14]
+    return u13(u5[v16.Rarity], u6[v16.Rarity], p15)
+end
+function u4.GetLevelFromPet(_, p17) --[[Anonymous function at line 81]]
+    --[[
+    Upvalues:
+        [1] = u2
+        [2] = u13
+        [3] = u5
+        [4] = u6
+    --]]
+    local v18 = u2[p17.Name]
+    return u13(u5[v18.Rarity], u6[v18.Rarity], p17.XP)
+end
+function u4.GetTotalXPForLevel(_, p19, p20) --[[Anonymous function at line 94]]
+    --[[
+    Upvalues:
+        [1] = u2
+        [2] = u5
+        [3] = u6
+    --]]
+    local v21 = u2[p19]
+    local v22 = u5[v21.Rarity]
+    local v23 = u6[v21.Rarity]
+    local v24 = ((p20 - 1) / (v23 - 1)) ^ 2 * v22 / 5
+    local v25 = math.ceil(v24) * 5
+    return math.clamp(v25, 0, v22)
+end
+function u4.GetMarginalXPForLevel(_, p26, p27) --[[Anonymous function at line 111]]
+    --[[
+    Upvalues:
+        [1] = u4
+    --]]
+    return u4:GetTotalXPForLevel(p26, p27) - u4:GetTotalXPForLevel(p26, p27 - 1)
+end
+function u4.CalculateXPUntilMax(_, p28) --[[Anonymous function at line 124]]
+    --[[
+    Upvalues:
+        [1] = u2
+        [2] = u5
+    --]]
+    return u5[u2[p28.Name].Rarity] - p28.XP
+end
+function u4.CalculateGiveXP(_, p29, p30) --[[Anonymous function at line 137]]
+    --[[
+    Upvalues:
+        [1] = u2
+        [2] = u5
+        [3] = u4
+    --]]
+    local v31 = u5[u2[p29.Name].Rarity]
+    local v32 = p29.XP + p30
+    local v33 = math.min(v32, v31)
+    return v33, u4:GetLevelFromXP(p29.Name, v33)
+end
+function u4.GetMaxLevel(_, p34) --[[Anonymous function at line 152]]
+    --[[
+    Upvalues:
+        [1] = u6
+        [2] = u2
+    --]]
+    return u6[u2[p34.Name].Rarity]
+end
+function u4.IsMaxLevel(_, p35) --[[Anonymous function at line 158]]
+    --[[
+    Upvalues:
+        [1] = u4
+    --]]
+    return u4:GetLevelFromPet(p35) >= u4:GetMaxLevel(p35)
+end
+return u4

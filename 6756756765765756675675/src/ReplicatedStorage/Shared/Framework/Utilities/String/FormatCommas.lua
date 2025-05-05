@@ -1,0 +1,21 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMQBm51bWJlcgZhc3NlcnQGc3RyaW5nBmZvcm1hdAIlaQRnc3ViEF4oLT8lZCspKCVkJWQlZCkFJTEsJTIMRm9ybWF0Q29tbWFzBGdhbWURUmVwbGljYXRlZFN0b3JhZ2UKR2V0U2VydmljZQdyZXF1aXJlBlNoYXJlZAlGcmFtZXdvcmsBVAACBwEBAAAGAwAABQECG/sDAABNAgNgAAAAAFIDAACfAgIATAEAAqQBAgAAABBAnwEAAaQBBQAAEDCAbwIGAFIDAACfAQMCjAL//w0CCgAHAAAApAMJAAAgMIBSBAEAbwUKAG8GCwCfAwQDUgEDAFICBABIAPX/ggECAAwDAQMCBAAAEEADAwMEBAAQMIADBQIAAAAAAAAAAAMGBAAgMIADBwMIAAoJARgAAAAAAAAAAAABAAAAAAEBAAEAAAAAAAAA/wMLAAAAAAUAAAECABOjAAAApAABAAAAAEBvAgIAvAAAFgMAAACfAAMCpAEFAAAAQEBNBAASBgAAAE0DBBwHAAAATQIDdQgAAACfAQICwAIJABIAAQCCAgIACgMKBAAAAEADCwMMAw0EAABAQAMOAw8DEAYAAQABAAEYAAIAAAAAAAEAAAAAAAAAAAYADAEAAAAAAfq2q1u93GJpyHLBz+dCTuTORuUUE2iIB0BvfOM+LbSA7gGXLeemopQ=
+
+local v1 = game:GetService("ReplicatedStorage")
+local u2 = require(v1.Shared.Framework.T)
+return function(p3) --[[Function name: FormatCommas, line 10]]
+    --[[
+    Upvalues:
+        [1] = u2
+    --]]
+    local v4 = u2.number
+    assert(v4(p3))
+    local v5 = string.format("%i", p3)
+    local v6 = -1
+    while v6 ~= 0 do
+        v5, v6 = string.gsub(v5, "^(-?%d+)(%d%d%d)", "%1,%2")
+    end
+    return v5
+end

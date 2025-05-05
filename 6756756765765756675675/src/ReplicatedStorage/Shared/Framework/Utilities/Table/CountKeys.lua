@@ -1,0 +1,20 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMKBXRhYmxlBmFzc2VydAlDb3VudEtleXMEZ2FtZRFSZXBsaWNhdGVkU3RvcmFnZQpHZXRTZXJ2aWNlB3JlcXVpcmUGU2hhcmVkCUZyYW1ld29yawFUAAIHAQEAAAYDAAAFAQQS+wMAAE0CA0sAAAAAUgMAAJ8CAgBMAQACpAECAAAAEECfAQABjAEAAFICAADGAwAAxgQAAGQCAQCVAQEDbgL+/wEAAACCAQIABAMBAwIEAAAQQAIAAAAAAADwPwAHAwEYAAAAAAAAAAAAAQEAAAAB/wADCAAAAAAFAAABAgATowAAAKQAAQAAAABAbwICALwAABYDAAAAnwADAqQBBQAAAEBATQQAEgYAAABNAwQcBwAAAE0CA3UIAAAAnwECAsACCQASAAEAggICAAoDBAQAAABAAwUDBgMHBAAAQEADCAMJAwoGAAEAAQABGAACAAAAAAABAAAAAAAAAAADAAoBAAAAAAFSE/Y83MPximDXnKjSTJA7iA2XhpikIj8ai/Fq76Cf8dbWkpafMhAS
+
+local v1 = game:GetService("ReplicatedStorage")
+local u2 = require(v1.Shared.Framework.T)
+return function(p3) --[[Function name: CountKeys, line 7]]
+    --[[
+    Upvalues:
+        [1] = u2
+    --]]
+    local v4 = u2.table
+    assert(v4(p3))
+    local v5 = 0
+    for _ in p3 do
+        v5 = v5 + 1
+    end
+    return v5
+end

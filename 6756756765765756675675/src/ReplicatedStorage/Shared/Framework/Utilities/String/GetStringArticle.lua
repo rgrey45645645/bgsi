@@ -1,0 +1,23 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMSBnN0cmluZwNzdWIFdGFibGUEZmluZAVsb3dlcgFoBWh1c2t5AmFuAmV1AnVpAWEGdW5pcXVlB3VuaWNvcm4QR2V0U3RyaW5nQXJ0aWNsZQFlAWkBbwF1AAIJAQEAAAYDAAAFAQNQjAMBAIwEAgA0LQAEAwQAAFICAACkAQIAAAQAgJ8BBAKMBAEAjAUBADQtAAQEBQAAUgMAAKQCAgAABACAnwIEAowFAgCMBgIANC0ABAUGAABSBAAApAMCAAAEAICfAwQCpAQFAAAQMID7BQAAvAYC7wYAAACfBgIAnwQAArwFAu8GAAAAnwUCAvAFEAAHAACApAUFAAAQMID7BgAAvAcD7wYAAACfBwIAnwUAAg4FBwC8BQDvBgAAAJ8FAgLwBQMACAAAAG8FCQCCBQIAvAUB7wYAAACfBQIC8AUGAAoAAAC8BQHvBgAAAJ8FAgLwBQMACwAAgG8FDACCBQIAvAUA7wYAAACfBQIC8AUGAA0AAAC8BQDvBgAAAJ8FAgLwBQMADgAAgG8FDACCBQIADgQCAG8FCQCCBQIAbwUMAIIFAgAPAwEDAgQABACAAwMDBAQAEDCAAwUDBgMHAwgDCQMKAwsDDAMNAAYOARgAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAQABAAAAAAAAAAAAAQABAAAAAAAAAAAAAQACAAAAAAcAAAAABgAAAQIADaMAAAD/AAAABQAAAG8BAABvAgEAbwMCAG8EAwBvBQQAxQABBgEAAADAAQUAEgAAAIIBAgAGAwsDDwMQAxEDEgYAAQABAAEYAAIAAAAAAAAAAAMAEAEAAAAAATwOv7EnBYL3DsrVJc9Hepo0BvbGap3qRgWTMrtqugd1fglVIjgvQ8s=
+
+local u1 = {
+    "a",
+    "e",
+    "i",
+    "o",
+    "u"
+}
+return function(p2) --[[Function name: GetStringArticle, line 6]]
+    --[[
+    Upvalues:
+        [1] = u1
+    --]]
+    local v3 = string.sub(p2, 1, 2)
+    local v4 = string.sub(p2, 1, 1)
+    local v5 = string.sub(p2, 2, 2)
+    local v6 = table.find(u1, v4:lower())
+    return v4:lower() == "h" and (table.find(u1, v5:lower()) and p2:lower() ~= "husky") and "an" or ((v3:lower() == "eu" or v3:lower() == "ui") and "a" or ((p2:lower() == "unique" or p2:lower() == "unicorn") and "a" or (v6 and "an" or "a")))
+end

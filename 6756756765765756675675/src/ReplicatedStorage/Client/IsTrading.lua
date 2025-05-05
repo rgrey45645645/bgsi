@@ -1,0 +1,13 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMJB1Zpc2libGUJSXNUcmFkaW5nBGdhbWUHUGxheWVycwpHZXRTZXJ2aWNlC0xvY2FsUGxheWVyCVBsYXllckd1aQlTY3JlZW5HdWkHVHJhZGluZwACAgABAAAABPsBAABNAAGAAAAAAIIAAgABAwEABwIBGAAAAAAIAAAAAAUAAAECABKjAAAApAABAAAAAEBvAgIAvAAAFgMAAACfAAMCTQQAMQQAAABNAwSZBQAAAE0CA3oGAAAATQEC1wcAAADAAggAEgABAIICAgAJAwMEAAAAQAMEAwUDBgMHAwgDCQYAAQABAAEYAAIAAAAAAAIAAAAAAAAAAgAEAQAAAAABRiueUwtCjHx07/THBDX9CNHQRB8jaqB89xDfXGSAspW835Dr+lYTUA==
+
+local u1 = game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.Trading
+return function() --[[Function name: IsTrading, line 7]]
+    --[[
+    Upvalues:
+        [1] = u1
+    --]]
+    return u1.Visible
+end

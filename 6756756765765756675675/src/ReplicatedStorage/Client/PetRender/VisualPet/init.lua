@@ -1,0 +1,386 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgOuAQRsZXJwBE5hbWUFQ2xvbmUER1VJRAZNeXRoaWMGUmFyaXR5BlNlY3JldAhHZXRTY2FsZQdTY2FsZVRvA0dldAZIaXRib3gORmluZEZpcnN0Q2hpbGQJR2V0Q2hhbmNlBkFzc2V0cwZQZXRUYWcDVGFnBkNoYW5jZQRUZXh0BzEgaW4gJSoEbWF0aARjZWlsBmZvcm1hdA5HZXRFeHRlbnRzU2l6ZQFZB1ZlY3RvcjMDbmV3FVN0dWRzT2Zmc2V0V29ybGRTcGFjZQpUZXh0Q29sb3IzBUxhYmVsBlBhcmVudA5HZXREZXNjZW5kYW50cwhCYXNlUGFydANJc0EKQ2FuQ29sbGlkZQpDYXN0U2hhZG93BFBldHMIQWRkTW9kZWwMbWFrZVBldE1vZGVsCU1hZ25pdHVkZRFpc1ZhbGlkU3RlcExlbmd0aARXYWxrCUFuaW1hdGlvbgxHZXRBdHRyaWJ1dGUJQ2hhcmFjdGVyCEh1bWFub2lkFUZpbmRGaXJzdENoaWxkT2ZDbGFzcwVTaGlueQVPd25lcgVNb2RlbAtGb2xsb3dTdHlsZQxQbGF5ZXJPZmZzZXQPQW5pbWF0aW9uT2Zmc2V0CEFuaW1hdG9yCERhbXBlbmVyCVlEYW1wZW5lcgdWaXNpYmxlCFBvc2l0aW9uBEdvYWwETG9vawVUd2lzdA5BY3RpdmVEYW1wZW5lcgpHcm91cEluZGV4Ckdyb3VwQ291bnQFUGhhc2UJV2Fsa1NwZWVkEVdhbGtTcGVlZE92ZXJyaWRlD0NsZWFudXBMaWdodGluZwlMYXN0TW92ZWQISXNNb3ZpbmcHQ2FuTW92ZQZDaXJjbGUBWAFaA21heANtaW4GcmFuZG9tCEluc3RhbmNlC0NGcmFtZVZhbHVlC051bWJlclZhbHVlBkNGcmFtZQJvcwVjbG9jawxzZXRtZXRhdGFibGUJQ3VzdG9tUmlnCEdldFBpdm90DEdlbmVyYXRlR1VJRApMb29rVmVjdG9yB1NwYXduQXQJZnJvbU1vZGVsBVZhbHVlBWNsYW1wA3NpbgNhYnMDcmFkBkFuZ2xlcwZCb3VuY2UDRmx5A2NvcwVIb3ZlcgdUYWtlb2ZmEkdldEFuaW1hdGlvbkNGcmFtZQRVbml0D0dldE1vdmVtZW50U3RlcApTbG93IEhvdmVyBExlcnALUHJpbWFyeVBhcnQJSGlwSGVpZ2h0BkNyZWF0ZQRQbGF5B1Bpdm90VG8GUmVuZGVyBkxvb2tBdAZNb3ZlVG8Jd29ya3NwYWNlCFJlbmRlcmVkClNldFZpc2libGULR2V0Q2hpbGRyZW4MQmlsbGJvYXJkR3VpB0Rlc3Ryb3kJU3dhcE1vZGVsDlNldEZvbGxvd1N0eWxlElNlbGVjdGlvbkhpZ2hsaWdodAVTb3VuZARTdG9wBGdhbWURUmVwbGljYXRlZFN0b3JhZ2UKR2V0U2VydmljZQdQbGF5ZXJzDFR3ZWVuU2VydmljZQtIdHRwU2VydmljZQpSdW5TZXJ2aWNlB3JlcXVpcmUGU2hhcmVkCUZyYW1ld29yawFUCFNlcnZpY2VzDkNvbGxpc2lvbkdyb3VwB0NsYXNzZXMEWm9uZQlVdGlsaXRpZXMFVGFibGUFQXJyYXkERGF0YQlDb25zdGFudHMGU3ByaW5nDFNlcXVlbmNlVXRpbAZDbGllbnQJTG9jYWxEYXRhBVR5cGVzBVV0aWxzC0dldFBldE1vZGVsB0VmZmVjdHMURHluYW1pY0xpZ2h0aW5nTW9kZWwFU3RhdHMHUGV0VXRpbAZTdHJpbmcMRm9ybWF0Q29tbWFzDkdldENoYW5jZUNvbG9yC0xvY2FsUGxheWVyDUN1cnJlbnRDYW1lcmEGUmFuZG9tCVR3ZWVuSW5mbwRFbnVtC0Vhc2luZ1N0eWxlBUN1YmljBFNpbmUPRWFzaW5nRGlyZWN0aW9uBUluT3V0A091dARUaW1lAkluB19faW5kZXgGc2NyaXB0DE1vZHVsZVNjcmlwdAARBgMAAAAIBQAABQMCAgIEJgUBAAkEBQJDAwAEggMCAAAAcQEBGAAAAAByAAAAABABCAAABgMAAAUBBIkB+wIAAE0DALoAAAAAhwECA/sCAQBSAwAAnwICArwCAjoBAAAAnwICAk0DAMACAAAAMAMCugAAAACMAwEATQQApAMAAAAOBAEAWwMDBPsGAABNBwC6AAAAAIcFBgdNBAXyBQAAAPAEAgAGAACAWwMDB7wHAuUIAAAAnwcCAgkGBwO8BAI0CQAAAJ8EAwH7BAIAvAQEfwoAAACfBAICbwcLALwFAgMMAAAAnwUDAvsGAwBSCAAAvAYG4Q0AAACfBgMC+wkEAE0ICYEOAAAA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
+
+local u1 = game:GetService("ReplicatedStorage")
+local v2 = game:GetService("Players")
+local u3 = game:GetService("TweenService")
+local u4 = game:GetService("HttpService")
+game:GetService("RunService")
+require(u1.Shared.Framework.T)
+local u5 = require(u1.Shared.Framework.Services.CollisionGroup)
+require(u1.Shared.Framework.Classes.Zone)
+require(u1.Shared.Framework.Utilities.Table.Array)
+local u6 = require(u1.Shared.Data.Pets)
+require(u1.Shared.Constants)
+require(u1.Shared.Framework.Classes.Spring)
+require(u1.Shared.Framework.Utilities.SequenceUtil)
+local u7 = require(u1.Client.Framework.Services.LocalData)
+require(u1.Shared.Types)
+local u8 = require(u1.Shared.Utils.GetPetModel)
+local u9 = require(u1.Client.Effects.DynamicLightingModel)
+local u10 = require(u1.Shared.Utils.Stats.PetUtil)
+local u11 = require(u1.Shared.Framework.Utilities.String.FormatCommas)
+local u12 = require(u1.Shared.Utils.GetChanceColor)
+local _ = v2.LocalPlayer
+local _ = workspace.CurrentCamera
+Random.new()
+TweenInfo.new(2)
+TweenInfo.new(0.5, Enum.EasingStyle.Cubic)
+TweenInfo.new(1, Enum.EasingStyle.Sine)
+TweenInfo.new(0.75, Enum.EasingStyle.Bounce)
+TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.InOut)
+local u13 = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+local u14 = TweenInfo.new(u13.Time, u13.EasingStyle, Enum.EasingDirection.In)
+local u15 = {}
+u15.__index = u15
+local u16 = {}
+local function u29(p17) --[[Anonymous function at line 117]]
+    --[[
+    Upvalues:
+        [1] = u6
+        [2] = u8
+        [3] = u7
+        [4] = u10
+        [5] = u1
+        [6] = u11
+        [7] = u12
+        [8] = u5
+    --]]
+    local v18 = u6[p17.Name]
+    local v19 = u8(p17):Clone()
+    v19.Name = p17.GUID
+    local v20 = 1
+    if p17.Mythic then
+        v20 = v20 * 1.25
+    end
+    if u6[p17.Name].Rarity == "Secret" then
+        v20 = v20 * 2
+    end
+    v19:ScaleTo(v19:GetScale() * v20)
+    u7:Get()
+    local v21 = v19:FindFirstChild("Hitbox")
+    local v22 = u10:GetChance(p17)
+    local v23 = u1.Assets.PetTag:Clone()
+    if v18.Tag then
+        v23.Chance.Text = v18.Tag
+    else
+        local v24 = v23.Chance
+        local v25 = u11
+        local v26 = 100 / v22
+        v24.Text = ("1 in %*"):format((v25((math.ceil(v26)))))
+    end
+    local v27 = v19:GetExtentsSize().Y / 2.5
+    v23.StudsOffsetWorldSpace = Vector3.new(0, v27, 0)
+    v23.Chance.TextColor3 = u12(v22, v18.Tag)
+    v23.Label.Text = p17.Name
+    v23.Parent = v21
+    for _, v28 in v19:GetDescendants() do
+        if v28:IsA("BasePart") then
+            v28.CanCollide = false
+            v28.CastShadow = false
+        end
+    end
+    u5:AddModel(v19, "Pets")
+    return v19
+end
+local function u43(p30, p31, p32) --[[Anonymous function at line 174]]
+    --[[
+    Upvalues:
+        [1] = u6
+        [2] = u9
+        [3] = u15
+        [4] = u16
+    --]]
+    local _ = u6[p30.Name]
+    local v33 = p31:GetAttribute("Animation") or "Walk"
+    local v34 = p31:GetExtentsSize()
+    if p32 and p32.Character then
+        p32.Character:FindFirstChildOfClass("Humanoid")
+    end
+    local v35 = u9(p31)
+    local v36 = {
+        ["GUID"] = p30.GUID,
+        ["Name"] = p30.Name,
+        ["Shiny"] = p30.Shiny or false,
+        ["Mythic"] = p30.Mythic or false,
+        ["Owner"] = p32,
+        ["Model"] = p31,
+        ["FollowStyle"] = "Circle"
+    }
+    local v37 = v34.X
+    local v38 = v34.Z
+    local v39 = math.max(v37, v38) / 2 + 3
+    v36.PlayerOffset = math.min(6, v39)
+    v36.Animation = v33
+    v36.AnimationOffset = p32 and math.random() * 3.141592653589793 or 0
+    v36.Animator = Instance.new("CFrameValue")
+    v36.Dampener = Instance.new("NumberValue")
+    v36.YDampener = Instance.new("NumberValue")
+    v36.Visible = nil
+    v36.Position = Vector3.new()
+    v36.Goal = Vector3.new()
+    v36.Look = Vector3.new()
+    v36.Twist = CFrame.new()
+    v36.ActiveDampener = true
+    v36.GroupIndex = 1
+    v36.GroupCount = 1
+    v36.Phase = 0
+    v36.WalkSpeed = 50
+    v36.WalkSpeedOverride = nil
+    v36.CleanupLighting = v35
+    v36.LastMoved = os.clock()
+    v36.IsMoving = false
+    v36.CanMove = true
+    local v40 = u15
+    local v41 = setmetatable(v36, v40)
+    local v42 = u16[p30.Name]
+    if v42 then
+        v41.CustomRig = v42(v41)
+    end
+    return v41
+end
+function u15.new(p44, p45) --[[Anonymous function at line 230]]
+    --[[
+    Upvalues:
+        [1] = u43
+        [2] = u29
+    --]]
+    return u43(p44, u29(p44), p45)
+end
+function u15.fromModel(p46) --[[Anonymous function at line 235]]
+    --[[
+    Upvalues:
+        [1] = u5
+        [2] = u4
+        [3] = u43
+    --]]
+    local v47 = p46:GetPivot()
+    u5:AddModel(p46, "Pets")
+    local v48 = u43({
+        ["Name"] = p46.Name,
+        ["GUID"] = u4:GenerateGUID(false)
+    }, p46)
+    v48:SpawnAt(v47.Position, v47.Position - v47.LookVector)
+    return v48
+end
+function u15.GetAnimationCFrame(p49, p50) --[[Anonymous function at line 252]]
+    local v51 = p49.Phase + p49.AnimationOffset
+    local v52 = p49.Dampener.Value
+    if not p49.Owner then
+        local v53 = (p49.Goal * Vector3.new(1, 0, 1) - p50 * Vector3.new(1, 0, 1)).Magnitude
+        local v54 = math.clamp(v53, 0, 4) / 4
+        v52 = math.min(v52, v54)
+    end
+    local v55 = not p49.ActiveDampener and 1 or v52
+    if p49.Animation == "Walk" then
+        local v56 = v51 * 10
+        local v57 = math.sin(v56)
+        local v58 = math.abs(v57) * 3 * v55
+        local v59 = v51 * 10
+        local v60 = math.sin(v59)
+        local v61 = math.rad(v60) * 20 * v55
+        return CFrame.new(0, v58, 0) * CFrame.Angles(0, 0, v61)
+    end
+    if p49.Animation == "Bounce" then
+        local v62 = v51 * 20
+        local v63 = math.sin(v62)
+        local v64 = math.rad(v63) * 20 * v55
+        local v65 = v51 * 10
+        local v66 = math.sin(v65)
+        local v67 = math.abs(v66) * 3 * v55
+        return CFrame.new(0, v67, 0) * CFrame.Angles(v64, 0, 0)
+    end
+    if p49.Animation ~= "Fly" then
+        if p49.Animation == "Hover" then
+            local v68 = CFrame.new(0, 3, 0)
+            local v69 = v51 * 6
+            local v70 = math.sin(v69) * 0.35
+            return v68 + Vector3.new(0, v70, 0)
+        end
+        if p49.Animation ~= "Takeoff" then
+            return CFrame.new()
+        end
+        local v71 = CFrame.Angles(math.rad(v55) * 8, 0, 0)
+        local v72 = v51 * 4
+        local v73 = (math.sin(v72) * 0.5 + 4) * v55
+        return v71 + Vector3.new(0, v73, 0)
+    end
+    local v74 = CFrame.new(0, 3, 0)
+    local v75 = CFrame.Angles
+    local v76 = v51 * 4
+    local v77 = -math.cos(v76)
+    local v78 = v74 * v75(math.rad(v77) * 8, 0, 0)
+    local v79 = v51 * 4
+    local v80 = math.sin(v79) * 0.5
+    return v78 + Vector3.new(0, v80, 0)
+end
+function u15.GetMovementStep(p81, p82, p83, p84) --[[Anonymous function at line 291]]
+    local v85 = (p83 - p81.Goal).Magnitude
+    local v86 = (p81.Goal - p83).Unit * Vector3.new(1, 0, 1)
+    local v87 = p83 + v86 * p82 * p84
+    if v85 > 100 then
+        v87 = p81.Goal
+    elseif v85 == 0 then
+        v87 = p83
+    elseif (p83 - p81.Goal).Magnitude < (p83 - v87).Magnitude then
+        v87 = p81.Goal
+    end
+    return v87, v85, v86
+end
+function u15.Render(p88, p89) --[[Anonymous function at line 310]]
+    --[[
+    Upvalues:
+        [1] = u3
+        [2] = u13
+        [3] = u14
+    --]]
+    local v90 = p88.WalkSpeedOverride or p88.WalkSpeed
+    local v91, v92 = p88:GetMovementStep(p88.CanMove and p89 and p89 or 0, p88.Position, v90)
+    local v93 = v92 > 0.05
+    local v94 = p88:GetAnimationCFrame(p88.Position)
+    p88.Phase = p88.Phase + p89 * ((p88.Animation == "Fly" or p88.Animation == "Slow Hover") and v93 and 1.5 or 1)
+    local v95 = CFrame.new()
+    if (v91 - p88.Look).Magnitude > 0.05 then
+        local v96 = CFrame.new(p88.Look * Vector3.new(1, 0, 1), v91 * Vector3.new(1, 0, 1))
+        v95 = v96 - v96.Position
+    end
+    local v97 = p88.Twist:Lerp(v95, 0.15)
+    local v98 = p88.Owner
+    if v98 then
+        v98 = p88.Owner.Character
+    end
+    local v99
+    if v98 then
+        v99 = v98:FindFirstChildOfClass("Humanoid")
+    else
+        v99 = v98
+    end
+    if v99 and (v98 and v98.PrimaryPart) then
+        local v100 = p88.YDampener
+        local v101 = p88.YDampener.Value
+        v100.Value = v101 + (v98.PrimaryPart.Position.Y - v99.HipHeight - 1 - v101) * 0.1
+    end
+    if p88.IsMoving ~= v93 then
+        u3:Create(p88.Dampener, v93 and u13 or u14, {
+            ["Value"] = v93 and 1 or 0
+        }):Play()
+    end
+    p88.IsMoving = v93
+    p88.Position = v91
+    p88.Twist = v97
+    local v102 = CFrame.new(v91) * p88.Animator.Value * v97 * v94
+    local v103 = p88.Model
+    local v104 = p88.YDampener.Value
+    v103:PivotTo(v102 + Vector3.new(0, v104, 0))
+end
+function u15.MoveTo(p105, p106, p107) --[[Anonymous function at line 350]]
+    if p107 then
+        p105:LookAt(p106 + (p106 - p105.Goal).Unit)
+    end
+    p105.Goal = p106 * Vector3.new(1, 0, 1)
+end
+function u15.LookAt(p108, p109) --[[Anonymous function at line 359]]
+    p108.Look = p109 * Vector3.new(1, 0, 1)
+end
+function u15.SpawnAt(p110, p111, p112) --[[Anonymous function at line 364]]
+    if p112 then
+        p110.Twist = CFrame.new(p112 * Vector3.new(1, 0, 1), p111 * Vector3.new(1, 0, 1)) - p112
+        p110:LookAt(p112)
+    end
+    local v113 = p110.Owner
+    if v113 then
+        v113 = p110.Owner.Character
+    end
+    local v114
+    if v113 then
+        v114 = v113:FindFirstChildOfClass("Humanoid")
+    else
+        v114 = v113
+    end
+    if v114 and (v113 and v113.PrimaryPart) then
+        p110.YDampener.Value = v113.PrimaryPart.Position.Y - v114.HipHeight - 1
+    end
+    local v115 = p111.X
+    local v116 = p111.Z
+    p110.Position = Vector3.new(v115, 0, v116)
+    local v117 = p110.Model
+    local v118 = CFrame.new(p111) * p110.Twist
+    local v119 = p110.YDampener.Value
+    v117:PivotTo(v118 + Vector3.new(0, v119, 0))
+    p110:MoveTo(p111)
+end
+function u15.SetVisible(p120, p121) --[[Anonymous function at line 390]]
+    if p120.Visible ~= p121 then
+        p120.Model.Parent = p121 and workspace.Rendered.Pets or nil
+        p120.Visible = p121
+    end
+end
+function u15.SwapModel(p122, p123) --[[Anonymous function at line 399]]
+    --[[
+    Upvalues:
+        [1] = u8
+        [2] = u5
+    --]]
+    p122.Model:FindFirstChild("Hitbox")
+    local v124 = p122.Model
+    local v125 = u8(p123)
+    local v126 = v125:GetAttribute("Animation") or "Walk"
+    if v126 == "Fly" or (v126 == "Hover" or v126 == "Slow Hover") then
+        p122.Animator.Value = CFrame.new(0, -1.5, 0)
+    else
+        p122.Animator.Value = CFrame.new()
+    end
+    for _, v127 in v124:GetChildren() do
+        if v127:IsA("BillboardGui") then
+            v127.Parent = v125
+        end
+    end
+    for _, v128 in v125:GetDescendants() do
+        if v128:IsA("BasePart") then
+            v128.CanCollide = false
+        end
+    end
+    u5:AddModel(v125, "Pets")
+    v125:PivotTo(v124:GetPivot())
+    v125.Name = v124.Name
+    v125.Parent = v124.Parent
+    v124:Destroy()
+    p122.Model = v125
+    if not p122.Visible then
+        p122.Visible = true
+        p122:SetVisible(false)
+    end
+end
+function u15.SetFollowStyle(p129, p130) --[[Anonymous function at line 437]]
+    p129.FollowStyle = p130
+end
+function u15.Destroy(p131) --[[Anonymous function at line 442]]
+    local v132 = p131.Model:FindFirstChild("SelectionHighlight")
+    if v132 then
+        v132.Parent = nil
+    end
+    for _, v133 in p131.Model:GetDescendants() do
+        if v133:IsA("Sound") then
+            v133:Stop()
+        end
+    end
+    if p131.CleanupLighting then
+        p131.CleanupLighting()
+    end
+    if p131.CustomRig then
+        p131.CustomRig()
+    end
+    p131.Owner = nil
+    p131.Animator:Destroy()
+    p131.Dampener:Destroy()
+    p131.YDampener:Destroy()
+    p131.Model:Destroy()
+end
+for _, v134 in script:GetChildren() do
+    if v134:IsA("ModuleScript") then
+        u16[v134.Name] = require(v134)
+    end
+end
+return u15

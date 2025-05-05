@@ -1,0 +1,43 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMnBUxhYmVsBE9rYXkEVGV4dAZCdXR0b24FR3JlZW4PSXNJbnZlbnRvcnlGdWxsA25ldwlObyBzcGFjZSEWRGlnaXRhbFN0b3JhZ2VQYXNzTmFtZQhHYW1lcGFzcwxQb3B1cEZhaWx1cmUFU291bmQzWW91J3JlIG91dCBvZiAlKiEgRGVsZXRlIHBldHMgb3IgdW5sb2NrIG1vcmUgc3BhY2UhCWF1dG9Db2xvcg9pbnZlbnRvcnkgc3BhY2UGWWVsbG93BmZvcm1hdAVCdWlsZBNDaGVja0ludmVudG9yeVNwYWNlBGdhbWURUmVwbGljYXRlZFN0b3JhZ2UKR2V0U2VydmljZQdyZXF1aXJlBkNsaWVudANHdWkGUHJvbXB0BlNoYXJlZAVUeXBlcwVVdGlscwVTdGF0cwlTdGF0c1V0aWwERGF0YQhCdWlsZGVycw1Qcm9tcHRCdWlsZGVyB1BhbGV0dGUPQXV0b0J1dHRvbkNvbG9yD0NsaWNrYWJsZUJ1dHRvbghSaWNoVGV4dAlDb25zdGFudHMAAwcCAwAAABJNAgDDAAAAAG8DAQAwAwL1AgAAAPsCAABSAwAA+wYBAE0FBqwDAAAATQQFmwQAAACfAgMB+wICAFIDAABSBAEAnwIDAYIAAQAFAwEDAgMDAwQDBQAYAAEYAAAAAAABAAAAAAAAAAEAAAABGQAAAAALAQgAAAA3+wEAAFIDAAC8AQHmAAAAAJ8BAwIrAQIAqQEBAIIBAgD7AgEATQEC7wEAAABvAgIAnwECAvsEAgBNAwREAwAAALwBAb0EAAAAnwEDAm8DBQC8AQFuBgAAAJ8BAwJvBAcA+wcDAE0GB8wIAAAAbwcJAPsKBABNCQr1CgAAAE0ICX0LAAAAnwYDArwEBI0MAAAAnwQDAlIDBAC8AQH1CgAAAJ8BAwLAAw0AEgIFABICBAASAgYAvAEBrA4AAACfAQMC+wIHALwDAU8PAAAAnwMCAJ8CAAGpAgAAggICABADBgMHAwgDCQMKAwsDDAMNAw4DDwMDAxADEQYAAwQDEgEAEBMBGAAAAAAAAAEAAgAAAAABAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAYAAAAAAgARAAAAAAwAAAECAGSjAAAApAABAAAAAEBvAgIAvAAAFgMAAACfAAMCpAEFAAAAQEBNBABNBgAAAE0DBB8HAAAATQIDfQgAAACfAQICpAIFAAAAQEBNBAASCQAAAE0DBO8KAAAAnwICAqQDBQAAAEBATQcAEgkAAABNBgehCwAAAE0FBiEMAAAATQQFEw0AAACfAwICpAQFAAAAQEBNCAASCQAAAE0HCMYOAAAATQYHuw8AAABNBQZGEAAAAJ8EAgKkBQUAAABAQE0HABIJAAAATQYHeBEAAACfBQICpAYFAAAAQEBNCgBNBgAAAE0JCh8HAAAATQgJoQsAAABNBwjXEgAAAJ8GAgKkBwUAAABAQE0LAE0GAAAATQoLHwcAAABNCQqhCwAAAE0ICewTAAAAnwcCAqQIBQAAAEBATQsAEgkAAABNCguhCwAAAE0JCtEUAAAAnwgCAqQJBQAAAEBATQsAEgkAAABNCgsHFQAAAJ8JAgLAChYAEgADABIABAASAAkAEgAIABIABQASAAYAEgAHABIAAQCCCgIAFwMUBAAAAEADFQMWAxcEAABAQAMYAxkDGgMbAxwDHQMeAx8DIAMhAyIDIwMkAyUDJgMnBgEBAQEAARgAAgAAAAAAAgAAAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAAAABAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAADAAAAAAAAAAATAQAAAAACMkWlKw7Qt3IAgc+/IOqrwN419HGDTjYoL3uGvfOuWvSfd39j10yvKQ==
+
+local v1 = game:GetService("ReplicatedStorage")
+local u2 = require(v1.Client.Gui.Prompt)
+require(v1.Shared.Types)
+local u3 = require(v1.Shared.Utils.Stats.StatsUtil)
+local u4 = require(v1.Shared.Data.Builders.PromptBuilder)
+local u5 = require(v1.Shared.Palette)
+local u6 = require(v1.Client.Gui.Utils.AutoButtonColor)
+local u7 = require(v1.Client.Gui.Utils.ClickableButton)
+local u8 = require(v1.Shared.Utils.RichText)
+local u9 = require(v1.Shared.Constants)
+return function(p10) --[[Function name: CheckInventorySpace, line 16]]
+    --[[
+    Upvalues:
+        [1] = u3
+        [2] = u4
+        [3] = u9
+        [4] = u8
+        [5] = u5
+        [6] = u6
+        [7] = u7
+        [8] = u2
+    --]]
+    if not u3:IsInventoryFull(p10) then
+        return true
+    end
+    u2(u4.new("No space!"):Gamepass(u9.DigitalStoragePassName):Sound("PopupFailure"):Text((("You\'re out of %*! Delete pets or unlock more space!"):format((u8.autoColor("inventory space", u5.Text.Yellow))))):Button(function(p11, p12) --[[Anonymous function at line 24]]
+        --[[
+        Upvalues:
+            [1] = u6
+            [2] = u5
+            [3] = u7
+        --]]
+        p11.Label.Text = "Okay"
+        u6(p11, u5.Button.Green)
+        u7(p11, p12)
+    end):Build())
+    return false
+end

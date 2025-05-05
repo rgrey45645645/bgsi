@@ -1,0 +1,6 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMAAAEBAAABAgAEowAAAP8AAAAAAAAAggACAAAAAQABGACQAAABAAAAAAAZpoN4lqTIYCti6ewrBnXfv6gaAK12MRHKqbu4dcrANKW+TFrd2/UX
+
+return {}

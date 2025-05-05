@@ -1,0 +1,78 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- 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
+
+local u1 = game:GetService("ReplicatedStorage")
+game:GetService("HttpService")
+local v2 = game:GetService("Players")
+game:GetService("TextService")
+require(u1.Shared.Types)
+require(u1.Shared.Framework.T)
+require(u1.Shared.Utils.AnimateColor)
+require(u1.Shared.Data.Flavors)
+require(u1.Shared.Framework.Network.Remote)
+require(u1.Shared.Data.Currency)
+require(u1.Shared.Data.Pets)
+require(u1.Shared.Constants)
+require(u1.Shared.Utils.RichText)
+require(u1.Shared.Framework.Utilities.String.FormatSuffix)
+require(u1.Shared.Utils.Stats.ItemUtil)
+require(u1.Client.Gui.Utils.AutoButtonColor)
+local _ = v2.LocalPlayer.PlayerGui.ScreenGui
+local u3 = {}
+u3.__index = u3
+function u3.new(p4) --[[Anonymous function at line 68]]
+    --[[
+    Upvalues:
+        [1] = u1
+        [2] = u3
+    --]]
+    local v5 = {
+        ["_title"] = p4 or "Achievement",
+        ["_description"] = nil,
+        ["_icon"] = nil,
+        ["_bar"] = nil,
+        ["_button"] = nil,
+        ["_displayTime"] = 1.5,
+        ["_sound"] = u1.Assets.Sounds.UI.Popup
+    }
+    local v6 = u3
+    return setmetatable(v5, v6)
+end
+function u3.Bar(p7, p8, p9) --[[Anonymous function at line 80]]
+    if p8 then
+        p7._bar = {
+            ["Alpha"] = p8,
+            ["Text"] = p9
+        }
+        return p7
+    else
+        p7._bar = nil
+        return p7
+    end
+end
+function u3.Icon(p10, p11) --[[Anonymous function at line 92]]
+    p10._icon = p11
+    return p10
+end
+function u3.Description(p12, p13) --[[Anonymous function at line 97]]
+    p12._description = p13
+    return p12
+end
+function u3.Button(p14, p15) --[[Anonymous function at line 102]]
+    p14._button = p15
+    return p14
+end
+function u3.Build(p16) --[[Anonymous function at line 107]]
+    return {
+        ["Icon"] = p16._icon,
+        ["Title"] = p16._title,
+        ["Bar"] = p16._bar,
+        ["Description"] = p16._description,
+        ["Sound"] = p16._sound,
+        ["Button"] = p16._button,
+        ["DisplayTime"] = p16._displayTime
+    }
+end
+return u3

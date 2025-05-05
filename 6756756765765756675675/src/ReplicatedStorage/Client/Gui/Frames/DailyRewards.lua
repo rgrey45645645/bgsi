@@ -1,0 +1,335 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgOsAQ11bnRpbE1pZG5pZ2h0BFNob3ADVG9wCUNvdW50ZG93bgZzdHJpbmcGZm9ybWF0DiUwMmk6JTAyaTolMDJpBFRleHQLdXBkYXRlVGltZXIMRGFpbHlSZXdhcmRzBklzT3BlbgR0YXNrBHdhaXQGQW1vdW50BUxhYmVsClRleHRCb3VuZHMBWAVTY2FsZQRtYXRoBGNlaWwFVURpbTIKZnJvbU9mZnNldARTaXplFXVwZGF0ZUFtb3VudExhYmVsU2l6ZQhmcm9tSXRlbQNuZXcPdXBkYXRlTGFiZWxTaXplGFlvdSBuZWVkICUqIHRvIGJ1eSB0aGlzIQNHZXQEVHlwZQhDdXJyZW5jeQVTdGFycwRDb3N0DkdldE93bmVkQW1vdW50CUdldEFtb3VudA1mcm9tTm90RW5vdWdoBUJ1aWxkBEl0ZW0DUGV0E0RhaWx5UmV3YXJkc0J1eUl0ZW0KRmlyZVNlcnZlcgdDb250ZW50BUNvdmVyB0J1dHRvbnMDQnV5BkJ1dHRvbgdWaXNpYmxlBCUqJSoMUm9idXhVbmljb2RlDFByaWNlSW5Sb2J1eAJfXw5nZXRBYnNvbHV0ZURheQdMYXN0RGF5BUxvZ2luB0NsYWltZWQGU3RyZWFrDfCflKUgJSogRGF5JSoKTGFzdFN0cmVhawABcxxZb3UgbG9zdCB5b3VyICUqLWRheSBzdHJlYWshFERhaWx5UmV3YXJkc1Byb2R1Y3RzBERheXMLZnJvbVByb2R1Y3QJUHJvZHVjdElkCUNhbkFmZm9yZAZQdXJwbGULTGF5b3V0T3JkZXIDUmVkF0RhaWx5UmV3YXJkc1N0YXJzUGVyRGF5E0RhaWx5UmV3YXJkc1N0YXJDYXAFY2xhbXAETm9uZQZDb2xvcjMHZnJvbVJHQgpUZXh0Q29sb3IzCFVJU3Ryb2tlBUNvbG9yEEJhY2tncm91bmRDb2xvcjMJVGhpY2tuZXNzBVRvZGF5BVNoaWZ0B1JhaW5ib3cFU3BlZWQIVG9tb3Jyb3cFQ3ljbGUFU2hpbnkGRGF5ICUqAyslKgZ1cGRhdGUEU2hvdxVQcm9tcHRQcm9kdWN0UHVyY2hhc2UZRGFpbHlSZXdhcmRzRm9yZmVpdFN0cmVhaxVEYWlseVJld2FyZENsYWltU3RhcnMFQ2xvc2UEZ2FtZRFSZXBsaWNhdGVkU3RvcmFnZQpHZXRTZXJ2aWNlB1BsYXllcnMSTWFya2V0cGxhY2VTZXJ2aWNlClJ1blNlcnZpY2UHcmVxdWlyZQZTaGFyZWQFVHlwZXMGQ2xpZW50CUZyYW1ld29yawhTZXJ2aWNlcwlMb2NhbERhdGEDR3VpBVV0aWxzD0F1dG9CdXR0b25Db2xvcg9DbGlja2FibGVCdXR0b24IR3VpRnJhbWUHUGFsZXR0ZQlVdGlsaXRpZXMETWF0aARUaW1lBERhdGEJU3RhcnNTaG9wB05ldHdvcmsGUmVtb3RlBlN0cmluZwxGb3JtYXRDb21tYXMJQ29uc3RhbnRzCUl0ZW1GcmFtZQxGb3JtYXRTdWZmaXgFU3RhdHMISXRlbVV0aWwIQnVpbGRlcnMNUHJvbXB0QnVpbGRlcgZQcm9tcHQSSG9va1Njcm9sbGluZ0ZyYW1lB1Rvb2x0aXAOVG9vbHRpcEJ1aWxkZXIMQW5pbWF0ZUNvbG9yCkFuaW1hdGlvbnMSUHJvY2Vzc2luZ1B1cmNoYXNlCFR1dG9yaWFsC1Byb2R1Y3RJbmZvE0NoZWNrSW52ZW50b3J5U3BhY2UOSXNUcmFkaW5nUGxhemELTG9jYWxQbGF5ZXIJUGxheWVyR3VpCVNjcmVlbkd1aQdVSVNjYWxlBXNwYXduBUZyYW1lCFRlbXBsYXRlBlBhcmVudAVEYXklKgZCdW5kbGUFQ2xvbmUETmFtZQVJdGVtcw5GaW5kRmlyc3RDaGlsZAtHZXRDaGlsZHJlbgNJc0EMRm9ybWF0QW1vdW50ClVwZGF0ZUljb24FSG92ZXIHT25FbnRlcgRJY29uGEdldFByb3BlcnR5Q2hhbmdlZFNpZ25hbAdDb25uZWN0DlNjcm9sbGluZ0ZyYW1lDFVJR3JpZExheW91dAlmcm9tU2NhbGUFR3JlZW4HRm9yZmVpdAVDbGFpbRJDb25uZWN0RGF0YUNoYW5nZWQMQmluZE9uT3BlbmVkAA8HAAIAAAAW+wEAAE0AAT8AAAAAnwABAvsEAQBNAwSpAQAAAE0CA5gCAAAATQECOAMAAACkAgYAABRAgG8DBwC2BAAItgYACSEFBgkhBgAJnwIFAjACAfUKAAAAggABAAsDAQMCAwMDBAMFAwYEABRAgAMHAgAAAAAAIKxAAgAAAAAAAE5A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
+
+local v1 = game:GetService("ReplicatedStorage")
+local v2 = game:GetService("Players")
+local u3 = game:GetService("MarketplaceService")
+game:GetService("RunService")
+require(v1.Shared.Types)
+local u4 = require(v1.Client.Framework.Services.LocalData)
+local u5 = require(v1.Client.Gui.Utils.AutoButtonColor)
+local v6 = require(v1.Client.Gui.Utils.ClickableButton)
+local u7 = require(v1.Client.Gui.GuiFrame)
+local u8 = require(v1.Shared.Palette)
+local u9 = require(v1.Shared.Framework.Utilities.Math.Time)
+local u10 = require(v1.Shared.Data.StarsShop)
+local u11 = require(v1.Shared.Framework.Network.Remote)
+local u12 = require(v1.Shared.Framework.Utilities.String.FormatCommas)
+local u13 = require(v1.Shared.Constants)
+local v14 = require(v1.Client.Gui.Utils.ItemFrame)
+local v15 = require(v1.Shared.Framework.Utilities.String.FormatSuffix)
+local u16 = require(v1.Shared.Utils.Stats.ItemUtil)
+local u17 = require(v1.Shared.Data.Builders.PromptBuilder)
+local u18 = require(v1.Client.Gui.Prompt)
+local v19 = require(v1.Client.Framework.Utilities.Gui.HookScrollingFrame)
+local v20 = require(v1.Shared.Data.DailyRewards)
+local v21 = require(v1.Client.Gui.Tooltip)
+local u22 = require(v1.Shared.Data.Builders.TooltipBuilder)
+local u23 = require(v1.Shared.Utils.AnimateColor)
+local u24 = require(v1.Client.Gui.Animations.ProcessingPurchase)
+require(v1.Client.Tutorial)
+local u25 = require(v1.Shared.Framework.Utilities.ProductInfo)
+local u26 = require(v1.Client.Gui.Utils.CheckInventorySpace)
+if require(v1.Shared.Utils.IsTradingPlaza)() then
+    return {}
+end
+local u27 = v2.LocalPlayer
+local v28 = u27.PlayerGui.ScreenGui
+local u29 = v28.UIScale
+local u30 = v28.DailyRewards
+task.spawn(function() --[[Anonymous function at line 55]]
+    --[[
+    Upvalues:
+        [1] = u7
+        [2] = u9
+        [3] = u30
+    --]]
+    while true do
+        if u7:IsOpen("DailyRewards") then
+            local v31 = u9.untilMidnight()
+            u30.Shop.Top.Countdown.Text = string.format("%02i:%02i:%02i", v31 // 3600, v31 // 60 % 60, v31 % 60)
+        end
+        task.wait(0.25)
+    end
+end)
+local v32 = u30.Login.Frame.Content
+local v33 = v32.Template
+v33.Parent = nil
+local u34 = {}
+for v35 = 1, 7 do
+    local u36 = v20[v35]
+    local v37 = ("Day%*"):format(v35)
+    local u38
+    if v35 == 7 then
+        u38 = u30.Login.Frame.Bundle
+    else
+        u38 = false
+    end
+    if not u38 then
+        u38 = v33:Clone()
+        u38.Name = v37
+        u38.LayoutOrder = v35
+    end
+    local function v41() --[[Anonymous function at line 85]]
+        --[[
+        Upvalues:
+            [1] = u38
+            [2] = u29
+        --]]
+        local v39 = u38.Amount.Label.TextBounds.X / u29.Scale
+        local v40 = math.ceil(v39) + 1
+        u38.Amount.Label.Size = UDim2.fromOffset(v40, 30)
+    end
+    local v42 = u38:FindFirstChild("Items")
+    if v42 then
+        for _, v43 in v42:GetChildren() do
+            if v43:IsA("Frame") then
+                local u44 = u36[v43.LayoutOrder]
+                if u44 then
+                    u16:FormatAmount(v43.Amount, u44)
+                    u16:UpdateIcon(v43, u44)
+                    v21:OnEnter(v43.Hover, function() --[[Anonymous function at line 100]]
+                        --[[
+                        Upvalues:
+                            [1] = u22
+                            [2] = u44
+                        --]]
+                        return u22.fromItem(u44)
+                    end)
+                end
+                v43.Visible = u44 ~= nil
+            end
+        end
+    else
+        u16:FormatAmount(u38.Icon.Amount, u36[1])
+        u16:UpdateIcon(u38.Icon, u36[1])
+        u38.Parent = v32
+        v21:OnEnter(u38.Hover, function() --[[Anonymous function at line 110]]
+            --[[
+            Upvalues:
+                [1] = u22
+                [2] = u36
+            --]]
+            return u22.fromItem(u36[1])
+        end)
+    end
+    u29:GetPropertyChangedSignal("Scale"):Connect(v41)
+    u38.Amount.Label:GetPropertyChangedSignal("TextBounds"):Connect(v41)
+    local v45 = u38.Amount.Label.TextBounds.X / u29.Scale
+    local v46 = math.ceil(v45) + 1
+    u38.Amount.Label.Size = UDim2.fromOffset(v46, 30)
+    u34[v35] = u38
+end
+local v47 = u30.Shop.Content.ScrollingFrame
+local v48 = v47.Template
+v48.Parent = nil
+v19(v47, v47.UIGridLayout)
+local u49 = {}
+for u50, u51 in u10 do
+    local v52 = v48:Clone()
+    local v53, _ = v14(u51.Item, true, true)
+    v53.Size = UDim2.fromScale(1, 1)
+    v53.Parent = v52.Frame
+    local u54 = v52.Buy.Button.Frame.Label
+    u54.Text = v15(u51.Cost, 5000)
+    local function v57() --[[Anonymous function at line 150]]
+        --[[
+        Upvalues:
+            [1] = u54
+            [2] = u29
+        --]]
+        local v55 = u54.TextBounds.X / u29.Scale
+        local v56 = math.ceil(v55) + 1
+        u54.Size = UDim2.new(0, v56, 1, 0)
+    end
+    u29:GetPropertyChangedSignal("Scale"):Connect(v57)
+    u54:GetPropertyChangedSignal("TextBounds"):Connect(v57)
+    local v58 = u54.TextBounds.X / u29.Scale
+    local v59 = math.ceil(v58) + 1
+    u54.Size = UDim2.new(0, v59, 1, 0)
+    v6(v52.Buy.Button, function() --[[Anonymous function at line 161]]
+        --[[
+        Upvalues:
+            [1] = u4
+            [2] = u51
+            [3] = u16
+            [4] = u17
+            [5] = u18
+            [6] = u26
+            [7] = u11
+            [8] = u50
+        --]]
+        local v60 = u4:Get()
+        if v60 then
+            local v61 = {
+                ["Type"] = "Currency",
+                ["Currency"] = "Stars",
+                ["Amount"] = u51.Cost
+            }
+            if u16:GetOwnedAmount(v60, v61) < u16:GetAmount(v61) then
+                return u18(u17.fromNotEnough(v60, v61, function(p62) --[[Anonymous function at line 174]]
+                    return ("You need %* to buy this!"):format(p62)
+                end):Build())
+            elseif u51.Item.Type ~= "Pet" or u26(v60) then
+                u11:FireServer("DailyRewardsBuyItem", u50)
+            end
+        else
+            return
+        end
+    end)
+    v52.Parent = v47
+    u49[u50] = v52
+end
+local u63 = nil
+local function v83() --[[Anonymous function at line 196]]
+    --[[
+    Upvalues:
+        [1] = u4
+        [2] = u9
+        [3] = u30
+        [4] = u12
+        [5] = u13
+        [6] = u25
+        [7] = u63
+        [8] = u49
+        [9] = u10
+        [10] = u16
+        [11] = u5
+        [12] = u8
+        [13] = u34
+        [14] = u23
+    --]]
+    local v64 = u4:Get()
+    if not v64 then
+        return
+    end
+    local v65 = v64.DailyRewards
+    local v66 = u9.getAbsoluteDay() > v65.LastDay
+    local v67 = u30.Login
+    local v68 = not v66
+    if v68 then
+        v68 = not v65.Claimed
+    end
+    v67.Visible = v68
+    u30.Shop.Visible = not u30.Login.Visible
+    u30.Shop.Streak.Label.Text = ("\240\159\148\165 %* Day%*"):format(v65.LastStreak, v65.LastStreak == 1 and "" or "s")
+    u30.Shop.Content.Cover.Label.Text = ("You lost your %*-day streak!"):format(v65.LastStreak)
+    u30.Shop.Content.Cover.Visible = v66
+    u30.Shop.Top.Amount.Label.Text = u12(v65.Stars)
+    if v66 then
+        local v69 = u13.DailyRewardsProducts
+        for v70 = #v69, 1, -1 do
+            local v71 = v69[v70]
+            if v65.LastStreak >= v71.Days then
+                u30.Shop.Content.Cover.Buttons.Buy.Button.Visible = false
+                u25.fromProduct(v71.ProductId, function(p72) --[[Anonymous function at line 221]]
+                    --[[
+                    Upvalues:
+                        [1] = u30
+                        [2] = u13
+                    --]]
+                    u30.Shop.Content.Cover.Buttons.Buy.Button.Visible = true
+                    u30.Shop.Content.Cover.Buttons.Buy.Button.Label.Text = ("%*%*"):format(u13.RobuxUnicode, p72 and p72.PriceInRobux or "__")
+                end)
+                u63 = v71.ProductId
+                break
+            end
+        end
+    else
+        u63 = nil
+    end
+    local v73 = u9.untilMidnight()
+    u30.Shop.Top.Countdown.Text = string.format("%02i:%02i:%02i", v73 // 3600, v73 // 60 % 60, v73 % 60)
+    for v74, v75 in u49 do
+        if u16:CanAfford(v64, {
+            ["Type"] = "Currency",
+            ["Currency"] = "Stars",
+            ["Amount"] = u10[v74].Cost
+        }) then
+            u5(v75.Buy.Button, u8.Button.Purple)
+            v75.LayoutOrder = v74
+        else
+            u5(v75.Buy.Button, u8.Button.Red)
+            v75.LayoutOrder = v74 + 999
+        end
+    end
+    local v76 = (v65.LastStreak - 1) % 7 + 1
+    for v77, v78 in u34 do
+        local v79 = v77 == v76
+        local v80 = (v65.LastStreak - v76 + v77) * u13.DailyRewardsStarsPerDay
+        local v81 = u13.DailyRewardsStarCap
+        local v82 = math.clamp(v80, 0, v81)
+        if v79 then
+            u23.None(v78.Label)
+            v78.Label.TextColor3 = Color3.fromRGB(255, 94, 247)
+            v78.UIStroke.Color = Color3.fromRGB(255, 94, 247)
+            v78.BackgroundColor3 = Color3.fromRGB(255, 212, 251)
+            v78.UIStroke.Thickness = 5
+            v78.Label.Text = "Today"
+        else
+            if v77 == 7 then
+                u23.Shift(v78.Label, "Rainbow", {
+                    ["Speed"] = 0.4
+                })
+            else
+                v78.Label.TextColor3 = Color3.new(1, 1, 1)
+            end
+            if v77 - 1 == v76 then
+                v78.Label.Text = "Tomorrow"
+                u23.Cycle(v78.Label, "Shiny", {
+                    ["Speed"] = 1
+                })
+            else
+                u23.None(v78.Label)
+                v78.Label.Text = ("Day %*"):format(v77)
+            end
+            v78.UIStroke.Thickness = 3
+            v78.UIStroke.Color = Color3.fromRGB(0, 41, 94)
+            v78.BackgroundColor3 = Color3.fromRGB(225, 243, 255)
+        end
+        v78.Amount.Label.Text = ("+%*"):format((u12(v82)))
+    end
+end
+u5(u30.Shop.Content.Cover.Buttons.Buy.Button, u8.Button.Green)
+v6(u30.Shop.Content.Cover.Buttons.Buy.Button, function() --[[Anonymous function at line 292]]
+    --[[
+    Upvalues:
+        [1] = u63
+        [2] = u24
+        [3] = u3
+        [4] = u27
+    --]]
+    if u63 then
+        u24:Show()
+        u3:PromptProductPurchase(u27, u63)
+    end
+end)
+u5(u30.Shop.Content.Cover.Buttons.Forfeit.Button, u8.Button.Red)
+v6(u30.Shop.Content.Cover.Buttons.Forfeit.Button, function() --[[Anonymous function at line 301]]
+    --[[
+    Upvalues:
+        [1] = u11
+    --]]
+    u11:FireServer("DailyRewardsForfeitStreak")
+end)
+u5(u30.Login.Frame.Claim.Button, u8.Button.Purple)
+v6(u30.Login.Frame.Claim.Button, function() --[[Anonymous function at line 309]]
+    --[[
+    Upvalues:
+        [1] = u11
+    --]]
+    u11:FireServer("DailyRewardClaimStars")
+end)
+u4:ConnectDataChanged({ "DailyRewards", "Stars" }, v83)
+u7:BindOnOpened("DailyRewards", v83)
+u5(u30.Shop.Top.Close.Button, u8.Button.Red)
+v6(u30.Shop.Top.Close.Button, function() --[[Anonymous function at line 321]]
+    --[[
+    Upvalues:
+        [1] = u7
+    --]]
+    u7:Close()
+end)
+return {}

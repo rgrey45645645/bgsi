@@ -1,0 +1,320 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgOaAQRnYW1lEVJlcGxpY2F0ZWRTdG9yYWdlCkdldFNlcnZpY2UHcmVxdWlyZQZTaGFyZWQFVHlwZXMHVXBkYXRlMwZVcGRhdGUEUHJvZARUZXN0ClVuaXZlcnNlSWQHRGVmYXVsdAhUZWxlcG9ydAVQbGF6YQhQbGF6YVBybwdQbGFjZUlkFUZyZWVXaGVlbFNwaW5Db29sZG93bhBHZW1HZW5pZUNvb2xkb3duE0dlbUdlbmllU2tpcFByb2R1Y3QEVHlwZQROYW1lBkFtb3VudAdQb3dlcnVwClJlcm9sbCBPcmIOR2VtR2VuaWVSZXJvbGwVQXV0b1JpZnRDaGVzdENvb2xkb3duG3JieGFzc2V0aWQ6Ly83MjQ4ODI4MTc4MDg1NgxVbmtub3duSW1hZ2UD7oCCDFJvYnV4VW5pY29kZRtyYnhhc3NldGlkOi8vNzczNzkzODA0MDQ1MzQLSW5maW5pdHlFZ2cPRGlnaXRhbCBTdG9yYWdlFkRpZ2l0YWxTdG9yYWdlUGFzc05hbWUIRGF0ZVRpbWURZnJvbVVuaXZlcnNhbFRpbWUPRXhjbHVzaXZlUGV0RW5kBUVtb2ppBPCfpZoHSGF0Y2hlcwTwn5+jB0J1YmJsZXMLTGVhZGVyc3RhdHMCSWQFSXRlbXMDUGV0C0RhcmsgRHJhZ29uCEN1cnJlbmN5BUNvaW5zC015c3RlcnkgQm94BUxldmVsBlBvdGlvbg1TdGFydGVyQnVuZGxlBkNoYW5jZQVTcGVlZA5MZWdlbmRhcnlUaWVycxZFYXN5TGVnZW5kYXJ5VGhyZXNob2xkFlJhcmVMZWdlbmRhcnlUaHJlc2hvbGQLU2hpbnlDaGFuY2UMTXl0aGljQ2hhbmNlE1JvYnV4RWdnU2hpbnlDaGFuY2UUUm9idXhFZ2dNeXRoaWNDaGFuY2UOQmFzZVBldFN0b3JhZ2UQQmFzZVBldHNFcXVpcHBlZAxCYXNlUGV0VGVhbXMMU2VjcmV0UmFyaXR5BkNvbW1vbgZVbmlxdWUEUmFyZQRFcGljCUxlZ2VuZGFyeQZTZWNyZXQSU2hpbnlDb3VudFJlcXVpcmVkD1BldE1heGltdW1MZXZlbARFYXN5Bk1lZGl1bQRIYXJkBkluc2FuZQZDb2xvcjMHZnJvbVJHQhBEaWZmaWN1bHR5Q29sb3JzEERpZmZpY3VsdHlMZXZlbHMQUmFyaXR5WFBSZXF1aXJlZARDb2luCUNvaW4gUGlsZQpDb2luIFN0YWNrCENvaW4gQm94CUNvaW4gU2FmZQpDb2luIENoZXN0A0dlbQdHZW0gQm94CEdlbSBTYWZlCUdlbSBDaGVzdAhQaWNrdXBYUBJWaXN1YWxTdGFja01pblNpemUER2VtcxBIYXRjaGluZ1pvbmVDb3N0EU1heFRlYW1OYW1lTGVuZ3RoC1Jhcml0eU9yZGVyDFJhcml0eUNvbG9ycwRMdWNrBVNoaW55Bk15dGhpYwVWYWx1ZQdQZXJjZW50CkluZGV4QnVmZnMXUG90aW9uRGVmYXVsdENyYWZ0TGV2ZWwOUG90aW9uTWF4TGV2ZWwPUG90aW9uUmFyaXR5TWFwDlBvdGlvbkR1cmF0aW9uEVBpY2t1cFJlc3Bhd25UaW1lE0RlZmF1bHRQaWNrdXBSYWRpdXMRTGlrZUdvYWxJbmNyZW1lbnQOTGlrZUJvbnVzSXRlbXMRTWF4U3Bhd25hYmxlTGltaXQIQ2hhdFRhZ3MRQ2hhdFRhZ3NBdHRyaWJ1dGUMUGV0c0VxdWlwcGVkCkdhbWVwYXNzZXMPTWFzdGVyeVVwZ3JhZGVzC0FjdGl2ZUJ1ZmZzDUFjdGl2ZVBvdGlvbnMVTXVsdGlwbGllckRhdGFVcGRhdGVzDFRyYWRpbmdTbG90cxRUcmFkZVJlcXVlc3RDb29sZG93bhJUcmFkZVJlcXVlc3RFeHBpcnkRVHJhZGVDb25maXJtVGltZXIRVHJhZGVDaGF0Q29vbGRvd24UVHJhZGVFZ2dzUmVxdWlyZW1lbnQNVHJhZGVDb29sZG93bhBUcmFkZUhpc3RvcnlTaXplF0RhaWx5UmV3YXJkc1N0YXJzUGVyRGF5E0RhaWx5UmV3YXJkc1N0YXJDYXAERGF5cwlQcm9kdWN0SWQURGFpbHlSZXdhcmRzUHJvZHVjdHMNRWFzeUxlZ2VuZGFyeRlFbmNoYW50c1Jlcm9sbEFsbEdlbUNvc3RzFUVuY2hhbnRzUmVyb2xsT25lQ29zdBVFbmNoYW50UmVyb2xsQ29vbGRvd24TU2hvcFJlcm9sbFByb2R1Y3RJZBdTaG9wU2FsZU1hc3RlcnlEaXNjb3VudARTaG9wB1Nob3BUYWcGU2hvcElk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
+
+local v1 = game:GetService("ReplicatedStorage")
+require(v1.Shared.Types)
+local v2 = {
+    ["Update"] = "Update3",
+    ["UniverseId"] = {
+        ["Prod"] = 6504986360,
+        ["Test"] = 7522774360
+    }
+}
+local v3 = {
+    ["Prod"] = {
+        ["Default"] = 85896571713843,
+        ["Teleport"] = 80630096603395,
+        ["Plaza"] = 98046029518959,
+        ["PlazaPro"] = 127738893422250
+    },
+    ["Test"] = {
+        ["Default"] = 106606657866969,
+        ["Teleport"] = 102199401409874,
+        ["Plaza"] = 117657683856023,
+        ["PlazaPro"] = 82193153791349
+    }
+}
+v2.PlaceId = v3
+v2.FreeWheelSpinCooldown = 1200
+v2.GemGenieCooldown = 3600
+v2.GemGenieSkipProduct = 3252134914
+v2.GemGenieReroll = {
+    ["Type"] = "Powerup",
+    ["Name"] = "Reroll Orb",
+    ["Amount"] = 20
+}
+v2.AutoRiftChestCooldown = 0.35
+v2.UnknownImage = "rbxassetid://72488281780856"
+v2.RobuxUnicode = "\238\128\130"
+v2.InfinityEgg = "rbxassetid://77379380404534"
+v2.DigitalStoragePassName = "Digital Storage"
+v2.ExclusivePetEnd = DateTime.fromUniversalTime(2025, 4, 29, 8)
+v2.Leaderstats = {
+    {
+        ["Emoji"] = "\240\159\165\154",
+        ["Name"] = "Hatches"
+    },
+    {
+        ["Emoji"] = "\240\159\159\163",
+        ["Name"] = "Bubbles"
+    }
+}
+local v4 = {
+    ["Id"] = 3245212087,
+    ["Items"] = {
+        {
+            ["Type"] = "Pet",
+            ["Name"] = "Dark Dragon"
+        },
+        {
+            ["Type"] = "Currency",
+            ["Currency"] = "Coins",
+            ["Amount"] = 7500
+        },
+        {
+            ["Type"] = "Powerup",
+            ["Name"] = "Mystery Box",
+            ["Amount"] = 2
+        },
+        {
+            ["Type"] = "Potion",
+            ["Name"] = "Coins",
+            ["Level"] = 4,
+            ["Amount"] = 1
+        }
+    }
+}
+v2.StarterBundle = v4
+local v5 = {}
+local v6 = {
+    ["Chance"] = 100,
+    ["Items"] = {
+        {
+            ["Type"] = "Powerup",
+            ["Name"] = "Mystery Box",
+            ["Amount"] = 5
+        }
+    }
+}
+v5[1] = v6
+local v7 = {
+    ["Chance"] = 0.02,
+    ["Items"] = {
+        {
+            ["Type"] = "Potion",
+            ["Name"] = "Speed",
+            ["Level"] = 5,
+            ["Amount"] = 2
+        },
+        {
+            ["Type"] = "Powerup",
+            ["Name"] = "Mystery Box",
+            ["Amount"] = 5
+        }
+    }
+}
+v5[2] = v7
+local v8 = {
+    ["Chance"] = 0.002,
+    ["Items"] = {
+        {
+            ["Type"] = "Potion",
+            ["Name"] = "Speed",
+            ["Level"] = 6,
+            ["Amount"] = 1
+        },
+        {
+            ["Type"] = "Powerup",
+            ["Name"] = "Mystery Box",
+            ["Amount"] = 10
+        }
+    }
+}
+v5[3] = v8
+v2.LegendaryTiers = v5
+v2.EasyLegendaryThreshold = v2.LegendaryTiers[2].Chance
+v2.RareLegendaryThreshold = 0.005
+v2.ShinyChance = 2.5
+v2.MythicChance = 1
+v2.RobuxEggShinyChance = 10
+v2.RobuxEggMythicChance = 4
+v2.BasePetStorage = 350
+v2.BasePetsEquipped = 4
+v2.BasePetTeams = 1
+v2.SecretRarity = 2.5e-6
+v2.ShinyCountRequired = {
+    ["Common"] = 16,
+    ["Unique"] = 16,
+    ["Rare"] = 12,
+    ["Epic"] = 12,
+    ["Legendary"] = 10,
+    ["Secret"] = 8
+}
+v2.PetMaximumLevel = {
+    ["Common"] = 25,
+    ["Unique"] = 25,
+    ["Rare"] = 25,
+    ["Epic"] = 25,
+    ["Legendary"] = 25,
+    ["Secret"] = 25
+}
+v2.DifficultyColors = {
+    ["Easy"] = Color3.fromRGB(73, 255, 85),
+    ["Medium"] = Color3.fromRGB(255, 176, 49),
+    ["Hard"] = Color3.fromRGB(255, 39, 53),
+    ["Insane"] = Color3.fromRGB(238, 48, 255)
+}
+v2.DifficultyLevels = {
+    ["Easy"] = 1,
+    ["Medium"] = 2,
+    ["Hard"] = 3,
+    ["Insane"] = 4
+}
+v2.RarityXPRequired = {
+    ["Common"] = 10000,
+    ["Unique"] = 15000,
+    ["Rare"] = 20000,
+    ["Epic"] = 75000,
+    ["Legendary"] = 400000,
+    ["Secret"] = 1000000
+}
+v2.PickupXP = {
+    ["Coin"] = 5,
+    ["Coin Pile"] = 15,
+    ["Coin Stack"] = 35,
+    ["Coin Box"] = 85,
+    ["Coin Safe"] = 275,
+    ["Coin Chest"] = 650,
+    ["Gem"] = 85,
+    ["Gem Box"] = 175,
+    ["Gem Safe"] = 450,
+    ["Gem Chest"] = 750
+}
+v2.VisualStackMinSize = {
+    ["Common"] = 35,
+    ["Unique"] = 35,
+    ["Rare"] = 35,
+    ["Epic"] = 35,
+    ["Legendary"] = 100,
+    ["Secret"] = (1 / 0)
+}
+v2.HatchingZoneCost = {
+    ["Type"] = "Currency",
+    ["Currency"] = "Gems",
+    ["Amount"] = 10000
+}
+v2.MaxTeamNameLength = 25
+v2.RarityOrder = {
+    ["Common"] = 1,
+    ["Unique"] = 2,
+    ["Rare"] = 3,
+    ["Epic"] = 4,
+    ["Legendary"] = 5,
+    ["Secret"] = 6
+}
+v2.RarityColors = {
+    ["Common"] = Color3.fromRGB(255, 255, 255),
+    ["Unique"] = Color3.fromRGB(255, 196, 148),
+    ["Rare"] = Color3.fromRGB(255, 96, 96),
+    ["Epic"] = Color3.fromRGB(209, 101, 255),
+    ["Legendary"] = Color3.fromRGB(255, 255, 255),
+    ["Secret"] = Color3.fromRGB(255, 25, 213)
+}
+local v9 = {
+    ["Luck"] = {
+        ["Type"] = "Percent",
+        ["Value"] = 50
+    },
+    ["Shiny"] = {
+        ["Type"] = "Percent",
+        ["Value"] = 50
+    },
+    ["Mythic"] = {
+        ["Type"] = "Percent",
+        ["Value"] = 50
+    }
+}
+v2.IndexBuffs = v9
+v2.PotionDefaultCraftLevel = 2
+v2.PotionMaxLevel = 6
+v2.PotionRarityMap = {
+    "Common",
+    "Unique",
+    "Rare",
+    "Epic",
+    "Legendary",
+    "Legendary"
+}
+v2.PotionDuration = {
+    120,
+    180,
+    300,
+    600,
+    900,
+    1200
+}
+v2.PickupRespawnTime = 7.5
+v2.DefaultPickupRadius = 7.5
+v2.LikeGoalIncrement = 200
+v2.LikeBonusItems = {
+    {
+        ["Type"] = "Powerup",
+        ["Name"] = "Mystery Box",
+        ["Amount"] = 2
+    }
+}
+v2.MaxSpawnableLimit = 10
+v2.ChatTagsAttribute = "ChatTags"
+v2.MultiplierDataUpdates = {
+    "PetsEquipped",
+    "Gamepasses",
+    "MasteryUpgrades",
+    "ActiveBuffs",
+    "ActivePotions"
+}
+v2.TradingSlots = 10
+v2.TradeRequestCooldown = 5
+v2.TradeRequestExpiry = 4
+v2.TradeConfirmTimer = 5
+v2.TradeChatCooldown = 0.75
+v2.TradeEggsRequirement = 2000
+v2.TradeCooldown = 45
+v2.TradeHistorySize = 25
+v2.DailyRewardsStarsPerDay = 10
+v2.DailyRewardsStarCap = 200
+v2.DailyRewardsProducts = {
+    {
+        ["Days"] = 2,
+        ["ProductId"] = 3240213217
+    },
+    {
+        ["Days"] = 5,
+        ["ProductId"] = 3240213218
+    },
+    {
+        ["Days"] = 10,
+        ["ProductId"] = 3240213220
+    }
+}
+v2.EnchantsRerollAllGemCosts = {
+    ["Common"] = 150,
+    ["Unique"] = 200,
+    ["Rare"] = 300,
+    ["Epic"] = 500,
+    ["EasyLegendary"] = 750,
+    ["Legendary"] = 20000,
+    ["Secret"] = 50000
+}
+v2.EnchantsRerollOneCost = {
+    ["Type"] = "Powerup",
+    ["Name"] = "Reroll Orb",
+    ["Amount"] = 1
+}
+v2.EnchantRerollCooldown = 0.25
+v2.ShopRerollProductId = 3241265827
+v2.ShopSaleMasteryDiscount = 25
+v2.ShopTag = "Shop"
+v2.ShopIdAttribute = "ShopId"
+v2.TempShopRerollDuration = 600
+v2.Clan = {
+    ["MaxNameLength"] = 25,
+    ["MaxMembers"] = 6,
+    ["InviteCooldown"] = 15
+}
+v2.TradingTerminal = {
+    ["MaxSlots"] = 10,
+    ["Cooldown"] = 600
+}
+return v2

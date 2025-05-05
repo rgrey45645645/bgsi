@@ -1,0 +1,172 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgNgBkVmZmVjdAZSZW1vdmUETm9uZQVMYWJlbAZCdXR0b24FSW5uZXIIVUlTdHJva2UKQmFja2dyb3VuZApVSUdyYWRpZW50BEljb24KVXBkYXRlSWNvbgdjbGVhbnVwC0ltYWdlQ29sb3IzBkNvbG9yMwNuZXcIZnJvbUl0ZW0FQ2xvbmUJR2V0UmFyaXR5CUdldEFtb3VudAQlKiUqAXgGZm9ybWF0BFR5cGUDUGV0BVNoaW55A0FkZAROYW1lAlhQDkdldExldmVsRnJvbVhQBlNlY3JldAphdXRvU3Ryb2tlBFRleHQHVmlzaWJsZQRFbnVtDlRleHRYQWxpZ25tZW50BkNlbnRlcgdMaW1pdGVkBkJvdHRvbQNMdmwNUGVybWFuZW50QnVmZgVDeWNsZQdSYWluYm93BVNwZWVkClRleHRDb2xvcjMFUmlnaHQIVGV4dFNpemUHR2V0TmFtZQpTaGlueUxpZ2h0EEJhY2tncm91bmRDb2xvcjMGTXl0aGljB2Zyb21SR0IFQ29sb3IMUG90aW9uTXl0aGljBkFzc2V0cwlHcmFkaWVudHMGQ29tbW9uDFJhcml0eUNvbG9ycwlMZWdlbmRhcnkEU2l6ZQVVRGltMgpmcm9tT2Zmc2V0BVNoaWZ0B09uRW50ZXIJSXRlbUZyYW1lAm9zBWNsb2NrCFJvdGF0aW9uBGdhbWURUmVwbGljYXRlZFN0b3JhZ2UKR2V0U2VydmljZQpSdW5TZXJ2aWNlB3JlcXVpcmUGU2hhcmVkBVR5cGVzBVV0aWxzBVN0YXRzCEl0ZW1VdGlsBkNsaWVudANHdWkMQW5pbWF0ZUNvbG9yCFJpY2hUZXh0CUZyYW1ld29yawlVdGlsaXRpZXMGU3RyaW5nDEZvcm1hdFN1ZmZpeAlDb25zdGFudHMHVG9vbHRpcAREYXRhCEJ1aWxkZXJzDlRvb2x0aXBCdWlsZGVyDFBldExldmVsVXRpbARQZXRzDEl0ZW1UZW1wbGF0ZQRzaXplCUhlYXJ0YmVhdAdDb25uZWN0AAUGAAYAAAA7+wAAAPsDAQBNAgOzAAAAALwAAGkBAAAAnwADAfsBAgBNAAE/AgAAAPsCAwBNAQLDAwAAAJ8AAgH7AQIATQABPwIAAAD7AgEATQECrAQAAACfAAIB+wECAE0AAT8CAAAA+wMBAE0C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
+
+local u1 = game:GetService("ReplicatedStorage")
+local v2 = game:GetService("RunService")
+require(u1.Shared.Types)
+local u3 = require(u1.Shared.Utils.Stats.ItemUtil)
+local u4 = require(u1.Client.Gui.Utils.Shiny)
+local u5 = require(u1.Shared.Utils.AnimateColor)
+local u6 = require(u1.Shared.Utils.RichText)
+local u7 = require(u1.Shared.Framework.Utilities.String.FormatSuffix)
+local u8 = require(u1.Shared.Constants)
+local u9 = require(u1.Client.Gui.Tooltip)
+local u10 = require(u1.Shared.Data.Builders.TooltipBuilder)
+local u11 = require(u1.Shared.Utils.PetLevelUtil)
+local u12 = require(u1.Shared.Data.Pets)
+local u13 = u1.Assets.ItemTemplate
+u13.Name = "ItemFrame"
+local u14 = u6.new():size(20)
+local u15 = {}
+v2.Heartbeat:Connect(function() --[[Anonymous function at line 139]]
+    --[[
+    Upvalues:
+        [1] = u15
+    --]]
+    local v16 = os.clock() * 100 % 360
+    for v17 in u15 do
+        v17.Rotation = v16
+    end
+end)
+return function(u18, p19, p20) --[[Function name: ItemFrame, line 27]]
+    --[[
+    Upvalues:
+        [1] = u13
+        [2] = u3
+        [3] = u14
+        [4] = u7
+        [5] = u4
+        [6] = u5
+        [7] = u15
+        [8] = u11
+        [9] = u6
+        [10] = u12
+        [11] = u1
+        [12] = u8
+        [13] = u9
+        [14] = u10
+    --]]
+    local u21 = u13:Clone()
+    local u22 = u21.Button.Inner
+    local v23 = u3:GetRarity(u18)
+    local v24 = u3:GetAmount(u18)
+    local v25 = ("%*%*"):format(u14("x"), (u7(v24, 1000)))
+    local function v26() --[[Anonymous function at line 38]]
+        --[[
+        Upvalues:
+            [1] = u4
+            [2] = u21
+            [3] = u5
+            [4] = u22
+            [5] = u15
+            [6] = u3
+        --]]
+        u4:Remove(u21.Effect)
+        u5.None(u22.Label)
+        u5.None(u21.Button)
+        u5.None(u21.Button.Inner)
+        u5.None(u21.Button.UIStroke)
+        u15[u21.Background.UIGradient] = nil
+        u3:UpdateIcon(u21.Button.Inner.Icon)
+    end
+    if u18.Type == "Pet" then
+        if u18.Shiny then
+            u4:Add(u21.Effect)
+        end
+        local v27 = u11:GetLevelFromXP(u18.Name, u18.XP or 0)
+        if v23 == "Secret" or p20 then
+            u22.Label.Text = u6.autoStroke(u18.Name)
+            u22.Label.Visible = true
+            u22.Label.TextXAlignment = Enum.TextXAlignment.Center
+        else
+            u22.Label.Text = u6.autoStroke(v25)
+            u22.Label.Visible = v24 > 1
+        end
+        u21.Button.Limited.Visible = u12[u18.Name].Limited ~= nil
+        u22.Bottom.Text = u6.autoStroke((("%*%*"):format(u14("Lvl"), v27)))
+        u22.Bottom.Visible = v27 > 1
+    else
+        if u18.Type == "PermanentBuff" then
+            u5.Cycle(u22.Label, "Rainbow", {
+                ["Speed"] = 0.5
+            })
+        end
+        u22.Bottom.Text = u6.autoStroke(v25)
+        u22.Bottom.Visible = v24 > 1
+        u22.Bottom.TextColor3 = Color3.new(1, 1, 1)
+        u22.Bottom.TextXAlignment = Enum.TextXAlignment.Right
+        u22.Label.TextSize = 22
+        u22.Label.Text = u6.autoStroke(u3:GetName(u18))
+        u22.Label.TextXAlignment = Enum.TextXAlignment.Center
+    end
+    local v28 = false
+    local v29 = false
+    if u18.Type == "Pet" and u18.Shiny then
+        u5.Cycle(u21.Button, "Shiny", {
+            ["Speed"] = 0.5
+        })
+        u5.Cycle(u21.Button.Inner, "ShinyLight", {
+            ["Speed"] = 0.5
+        })
+        u21.Button.BackgroundColor3 = Color3.new(1, 1, 1)
+        u21.Button.Inner.BackgroundColor3 = Color3.new(1, 1, 1)
+        v29 = true
+    elseif u18.Type == "Pet" and u18.Mythic then
+        u21.Button.BackgroundColor3 = Color3.new(1, 1, 1)
+        u21.Button.Inner.BackgroundColor3 = Color3.fromRGB(226, 167, 255)
+        u21.Button.UIStroke.Color = Color3.new(1, 1, 1)
+        u5.Cycle(u21.Button.UIStroke, "Mythic", {
+            ["Speed"] = 0.75
+        })
+        u5.Cycle(u21.Button, "PotionMythic", {
+            ["Speed"] = 0.5
+        })
+        u21.Background.UIGradient.Color = u1.Assets.Gradients.Mythic.Color
+        v28 = true
+    else
+        local v30 = u21.Button
+        local v31
+        if v23 == "Common" then
+            v31 = Color3.fromRGB(41, 205, 255)
+        elseif v23 == "Secret" then
+            v31 = Color3.new(1, 1, 1)
+        else
+            v31 = u8.RarityColors[v23]
+        end
+        v30.BackgroundColor3 = v31
+    end
+    if v23 == "Legendary" or v23 == "Secret" then
+        if v23 == "Secret" then
+            u21.Size = u21.Size + UDim2.fromOffset(40, 40)
+        end
+        if not (v28 or v29) then
+            u5.Shift(u21.Button, "Rainbow", {
+                ["Speed"] = 0.5
+            })
+        end
+        u5.Cycle(u22.Label, "Rainbow", {
+            ["Speed"] = 0.5
+        })
+        u15[u21.Background.UIGradient] = true
+    else
+        u21.Background.Visible = false
+    end
+    u22.Secret.Visible = v23 == "Secret"
+    u3:UpdateIcon(u22.Icon, u18)
+    if p19 then
+        u9:OnEnter(u21.Button, function() --[[Anonymous function at line 128]]
+            --[[
+            Upvalues:
+                [1] = u21
+                [2] = u10
+                [3] = u18
+            --]]
+            if u21.Button.Inner.Icon.Label.ImageColor3 ~= Color3.new() then
+                return u10.fromItem(u18)
+            end
+        end)
+    end
+    return u21, v26
+end

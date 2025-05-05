@@ -1,0 +1,32 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMSBV9wb29sDHNldG1ldGF0YWJsZQNuZXcESXRlbQZDaGFuY2UFdGFibGUGaW5zZXJ0A0FkZAVCdWlsZARnYW1lEVJlcGxpY2F0ZWRTdG9yYWdlCkdldFNlcnZpY2UHcmVxdWlyZQZTaGFyZWQFVHlwZXMERGF0YQRQZXRzB19faW5kZXgABAMAAQAAAAziAQEA/wIAAAAAAAAwAgFZAAAAAPsCAACePQEDAgAAAKQAAwAAACBAnwADAoIAAgAEAwEFAQADAgQAACBAABsDARgAAQAAAAEAAP4AAAAcAAAAAAYDAAAAAA1NBABZAAAAAOIFAwAwAgXKAQAAADABBYwCAAAAnjQEAwUAAACkAwYAABRAgJ8DAwGCAAIABwMBAwQDBQUCAQIDBgMHBAAUQIAAIggBGAAAAAEAAQAAAP4AAAQjAAAAAAIBAAAAAANNAQBZAAAAAIIBAgABAwEAKwkBGAAAACwAAAAABgAAAQIAJqMAAACkAAEAAAAAQG8CAgC8AAAWAwAAAJ8AAwKkAQUAAABAQE0DABIGAAAATQID7wcAAACfAQICpAIFAAAAQEBNBQASBgAAAE0EBcYIAAAATQME6AkAAACfAgIC/wMAAAAAAAAwAwNuCgAAAMAECwASAAMAMAQD7wwAAADABA0AMAQDXw4AAADABA8AMAQDTxAAAACCAwIAEQMKBAAAAEADCwMMAw0EAABAQAMOAw8DEAMRAxIGAAMDBgEDCAYCAwkDAAECAQABGAACAAAAAAACAAAAAAAAAQAAAAAAAAAAEQABAAMAAAAHAAAJAAAFAQAAAAADL1qpq2VJ+ycdnsM/knx8/g59CEh8qWKI8Q/xBqz/fUOoFQ5sLg0MBw==
+
+local v1 = game:GetService("ReplicatedStorage")
+require(v1.Shared.Types)
+require(v1.Shared.Data.Pets)
+local u2 = {}
+u2.__index = u2
+function u2.new() --[[Anonymous function at line 27]]
+    --[[
+    Upvalues:
+        [1] = u2
+    --]]
+    local v3 = u2
+    return setmetatable({
+        ["_pool"] = {}
+    }, v3)
+end
+function u2.Add(p4, p5, p6) --[[Anonymous function at line 34]]
+    local v7 = p4._pool
+    table.insert(v7, {
+        ["Item"] = p6,
+        ["Chance"] = p5
+    })
+    return p4
+end
+function u2.Build(p8) --[[Anonymous function at line 43]]
+    return p8._pool
+end
+return u2

@@ -1,0 +1,33 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMaBnN0cmluZwVsb3dlcgRnc3ViAiVzAA5tYWtlU2VhcmNoYWJsZQROYW1lBSUqICUqBlJhcml0eQZmb3JtYXQGTXl0aGljCU15dGhpYyAlKgVTaGlueQhTaGlueSAlKghFbmNoYW50cwJJZAtEaXNwbGF5TmFtZRBnZXRQZXRTZWFyY2hOYW1lBGdhbWURUmVwbGljYXRlZFN0b3JhZ2UKR2V0U2VydmljZQdyZXF1aXJlBlNoYXJlZAREYXRhBFBldHMFVHlwZXMAAwYBAAAABgMAAAUBAwqkAQIAAAQAgKQCBAAADACAUgMAAG8EBQBvBQYAnwIEAp8BAgCCAQAABwMBAwIEAAQAgAMDBAAMAIADBAMFAAsGARgAAAAAAAAAAAAADAAAAAAOAQMAAAA6TQEAugAAAABvAgEAUgQBAPsHAABNCAC6AAAAAIcGBwhNBQbyAgAAALwCAo0DAAAAnwIEAlIBAgBNAgCkBAAAAA4CBgBvAgUAUgQBALwCAo0DAAAAnwIDAlIBAgBNAgC0BgAAAA4CBgBvAgcAUgQBALwCAo0DAAAAnwIDAlIBAgBNAgCqCAAAAA4CEwBNAgCqCAAAAMYDAADGBAAAZAIMAG8HAQBSCQEA+wwBAE0NBpQJAAAAhwsMDU0KC1cKAAAAvAcHjQMAAACfBwQCUgEHAG4C8/8CAAAA+wICAFIDAQCfAgIAggIAAAsDBwMIAwkDCgMLAwwDDQMOAw8DEAMRAA8SARgAAAEAAAAAAAAAAAAAAAIAAAEAAAAAAAIAAAEAAAAAAAMAAAEAAAAAAQAAAAAAAAAAAAAA/wAFAAAAEAAAAAAHAAABAgAmowAAAKQAAQAAAABAbwICALwAABYDAAAAnwADAqQBBQAAAEBATQQAEgYAAABNAwTGBwAAAE0CA+gIAAAAnwECAqQCBQAAAEBATQQAEgYAAABNAwTvCQAAAJ8CAgKkAwUAAABAQE0GABIGAAAATQUGxgcAAABNBAWqCgAAAJ8DAgLABAsAwAUMABIAAQASAAMAEgAEAIIFAgANAxMEAAAAQAMUAxUDFgQAAEBAAxcDGAMZAxoDDwYABgECAAEBAAEYAAIAAAAAAAIAAAAAAAAAAAEAAAAAAAABAAAAAAAAAAAEBAAAABQBAAAAAAKUMoy5Th/lFKb25i0N5ccTEUuYPZ1ZdHKfL1VAPJUcsN2MVlu9Ym83
+
+local v1 = game:GetService("ReplicatedStorage")
+local u2 = require(v1.Shared.Data.Pets)
+require(v1.Shared.Types)
+local u3 = require(v1.Shared.Data.Enchants)
+local function u5(p4) --[[Anonymous function at line 11]]
+    return string.lower((string.gsub(p4, "%s", "")))
+end
+return function(p6) --[[Function name: getPetSearchName, line 15]]
+    --[[
+    Upvalues:
+        [1] = u2
+        [2] = u3
+        [3] = u5
+    --]]
+    local v7 = ("%* %*"):format(p6.Name, u2[p6.Name].Rarity)
+    if p6.Mythic then
+        v7 = ("Mythic %*"):format(v7)
+    end
+    if p6.Shiny then
+        v7 = ("Shiny %*"):format(v7)
+    end
+    if p6.Enchants then
+        for _, v8 in p6.Enchants do
+            v7 = ("%* %*"):format(v7, u3[v8.Id].DisplayName)
+        end
+    end
+    return u5(v7)
+end

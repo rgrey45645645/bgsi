@@ -1,0 +1,16 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMNBnN0cmluZwZhc3NlcnQEWwoJXQAEZ3N1YgdGbGF0dGVuBGdhbWURUmVwbGljYXRlZFN0b3JhZ2UKR2V0U2VydmljZQdyZXF1aXJlBlNoYXJlZAlGcmFtZXdvcmsBVAACBQEBAAAGAwAABQEDD/sDAABNAgNBAAAAAFIDAACfAgIATAEAAqQBAgAAABBAnwEAAW8DAwBvBAQAvAEAzAUAAACfAQQCggECAAYDAQMCBAAAEEADAwMEAwUACgYBGAAAAAAAAAAAAAEAAAAAAAsAAAAABQAAAQIAE6MAAACkAAEAAAAAQG8CAgC8AAAWAwAAAJ8AAwKkAQUAAABAQE0EABIGAAAATQMEHAcAAABNAgN1CAAAAJ8BAgLAAgkAEgABAIICAgAKAwcEAAAAQAMIAwkDCgQAAEBAAwsDDAMNBgABAAEAARgAAgAAAAAAAQAAAAAAAAAABgAFAQAAAAABH9oMK9MgduwtHma/06Zqpwk0mWbl9TCDe00tx+ir5zV8BUCsZ+5g6Q==
+
+local v1 = game:GetService("ReplicatedStorage")
+local u2 = require(v1.Shared.Framework.T)
+return function(p3) --[[Function name: Flatten, line 10]]
+    --[[
+    Upvalues:
+        [1] = u2
+    --]]
+    local v4 = u2.string
+    assert(v4(p3))
+    return p3:gsub("[\n\t]", "")
+end

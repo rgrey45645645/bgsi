@@ -1,0 +1,765 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgPVAQdVSVNjYWxlBVNjYWxlEkFic29sdXRlQ2FudmFzU2l6ZQFZBFNpemUGT2Zmc2V0CFBvc2l0aW9uBG1hdGgDYWJzFWVsZW1lbnRUb0NhbnZhc0hlaWdodAZDb2xvcjMHZnJvbVJHQgNuZXcEVHlwZQVXb3JsZAROYW1lDkZpbmRGaXJzdENoaWxkB0JhY2tpbmcLSW1hZ2VDb2xvcjMVdXBkYXRlU2VsZWN0aW9uVmlzdWFsBkJ1dHRvbhZCYWNrZ3JvdW5kVHJhbnNwYXJlbmN5CFVJU3Ryb2tlDFRyYW5zcGFyZW5jeQVMYWJlbBFJbWFnZVRyYW5zcGFyZW5jeQt0b2dnbGVBcnJvdwNHZXQIU2VsZWN0ZWQMVmlld3BvcnRTaXplCXdvcmtzcGFjZQZXb3JsZHMGSGVpZ2h0DEdldEF0dHJpYnV0ZQVPcmRlcgdWZWN0b3IyB0VsZW1lbnQGUGFyZW50Bk9iamVjdAdJc2xhbmRzDkNhbnZhc1Bvc2l0aW9uBVVEaW0yCWZyb21TY2FsZQVWYWx1ZQZDcmVhdGUEUGxheQ5Xb3JsZHNVbmxvY2tlZA1BcmVhc1VubG9ja2VkCFRlbGVwb3J0B1Zpc2libGUGQXJyb3dzBERvd24CVXAOdXBkYXRlU2VsZWN0ZWQPTWFzdGVyeVVwZ3JhZGVzDFF1aWNrQ29sbGVjdAZBY3Rpb24DQWxsCkFjdGl2aXRpZXMDPz8/BFRleHQGTG9ja2VkBEljb24EQXV0bwVUaW1lcglUZXh0TGFiZWwVRmluZEZpcnN0Q2hpbGRPZkNsYXNzA1ZJUAZQYXNzZXMGdXBkYXRlDkdldFBsYXllcldvcmxkC0dldFJvb3RQYXJ0BVNwYXduC0dldENoaWxkcmVuBkZvbGRlcgNJc0EGSXNsYW5kCEdldFBpdm90C0dldExvY2F0aW9uBE9wZW4FRnJhbWULTGF5b3V0T3JkZXIJUGxheWVyR3VpDVRyYW5zaXRpb25HdWkOTG9hZGluZyBHYWxheHkFV2lkdGgFSW1hZ2UFVGl0bGUDQWRkBUJ1aWxkB2Zyb21FZ2cKQ2xhaW1DaGVzdApGaXJlU2VydmVyCFJlbmRlcmVkBkNoZXN0cwR0YXNrBHdhaXQFVHJhY2sKRmFzdFRyYXZlbAtHZXRGdWxsTmFtZRB0b0lzbGFuZExvY2F0aW9uCFNldFRyYWNrDEVuYWJsZU1hc3RlcgZFbmFibGUGVXBkYXRlC1RlbGVwb3J0aW5nAyUqbQVmbG9vcgZmb3JtYXQKRWdnc09wZW5lZAZJc09wZW4FQ2xvc2UOSW5maW5pdHkgQ2hlc3QDbm93CUNvb2xkb3ducwpmb3JtYXRUaW1lA3NpbgFYCmZyb21PZmZzZXQIUm90YXRpb24JSGVhcnRiZWF0B0Nvbm5lY3QHQ2xlYW51cA1Vc2VySW5wdXRUeXBlBEVudW0KTW91c2VXaGVlbAFaBVRvdWNoEEdldE1vdXNlTG9jYXRpb24EZ2FtZQdQbGF5ZXJzCkdldFNlcnZpY2URUmVwbGljYXRlZFN0b3JhZ2UQVXNlcklucHV0U2VydmljZQpSdW5TZXJ2aWNlDFR3ZWVuU2VydmljZQdyZXF1aXJlBlNoYXJlZAREYXRhBEVnZ3MGQ2xpZW50A0d1aQdUb29sdGlwCEJ1aWxkZXJzDlRvb2x0aXBCdWlsZGVyCUZyYW1ld29yawhTZXJ2aWNlcwlMb2NhbERhdGEJVXRpbGl0aWVzBWV2ZXJ5CEd1aUZyYW1lBE1hdGgEVGltZQdDbGFzc2VzBE1haWQFVXRpbHMPQXV0b0J1dHRvbkNvbG9yB1BhbGV0dGUPQ2xpY2thYmxlQnV0dG9uBlN0cmluZwxGb3JtYXRTdWZmaXgOUGxheVRyYW5zaXRpb24HTmV0d29yawZSZW1vdGUJV29ybGRVdGlsCkFjdGl2YXRpb24FVGFibGUIRGVlcENvcHkNQ2hhcmFjdGVyVXRpbBFTZXRDb3JlR3VpRW5hYmxlZA5QbGF5ZXJDb250cm9scwVTdGF0cwlTdGF0c1V0aWwHRWZmZWN0cwdQaHlzaWNzBUFycmF5BU11c2ljC0xvY2FsUGxheWVyCVNjcmVlbkd1aQhXb3JsZE1hcA1DdXJyZW50Q2FtZXJhA0JhcgZNYXJrZXIPRmxvYXRpbmcgSXNsYW5kDVRoZSBPdmVyd29ybGQJU2VsZWN0aW9uCEluc3RhbmNlC051bWJlclZhbHVlCVR3ZWVuSW5mbwtFYXNpbmdTdHlsZQVRdWludARmcm9tBmZpbHRlcgRzb3J0BXRhYmxlBEJpbmQLSW1hZ2VCdXR0b24LRGVzY3JpcHRpb24Ed2Fy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
+
+local v1 = game:GetService("Players")
+local v2 = game:GetService("ReplicatedStorage")
+local u3 = game:GetService("UserInputService")
+local u4 = game:GetService("RunService")
+local u5 = game:GetService("TweenService")
+local u6 = require(v2.Shared.Data.Eggs)
+local v7 = require(v2.Client.Gui.Tooltip)
+local u8 = require(v2.Shared.Data.Builders.TooltipBuilder)
+local u9 = require(v2.Client.Framework.Services.LocalData)
+local u10 = require(v2.Shared.Framework.Utilities.every)
+require(v2.Client.Gui.GuiFrame)
+local u11 = require(v2.Shared.Framework.Utilities.Math.Time)
+local v12 = require(v2.Shared.Framework.Classes.Maid)
+local v13 = require(v2.Client.Gui.Utils.AutoButtonColor)
+local v14 = require(v2.Shared.Palette)
+local v15 = require(v2.Client.Gui.Utils.ClickableButton)
+local u16 = require(v2.Shared.Framework.Utilities.String.FormatSuffix)
+local u17 = require(v2.Client.Gui.PlayTransition)
+local u18 = require(v2.Shared.Framework.Network.Remote)
+local u19 = require(v2.Shared.Utils.WorldUtil)
+local v20 = require(v2.Client.Activation)
+require(v2.Shared.Data.Chests)
+require(v2.Shared.Framework.Utilities.Table.DeepCopy)
+local u21 = require(v2.Shared.Framework.Utilities.CharacterUtil)
+local u22 = require(v2.Client.Gui.Utils.SetCoreGuiEnabled)
+local u23 = require(v2.Client.PlayerControls)
+require(v2.Shared.Utils.Stats.StatsUtil)
+local u24 = require(v2.Client.Effects.Physics)
+local u25 = require(v2.Shared.Data.Worlds)
+local v26 = require(v2.Shared.Framework.Utilities.Table.Array)
+local u27 = require(v2.Client.Music)
+local u28 = v1.LocalPlayer
+local u29 = u28.PlayerGui.ScreenGui
+local u30 = u29.WorldMap
+local u31 = workspace.CurrentCamera
+local u32 = u30.Worlds
+local u33 = u30.Arrows.Bar.Marker
+local u34 = u32["The Overworld"].Islands["Floating Island"].Selection
+local u35 = {}
+local u36 = 1
+local u37 = {
+    ["Type"] = "World",
+    ["Name"] = "The Overworld",
+    ["World"] = "The Overworld"
+}
+local u38 = {}
+local u39 = {}
+local u40 = v12.new()
+local u41 = Instance.new("NumberValue")
+local u42 = TweenInfo.new(0.5, Enum.EasingStyle.Quint)
+local function u47(p43, p44) --[[Anonymous function at line 90]]
+    --[[
+    Upvalues:
+        [1] = u32
+        [2] = u39
+    --]]
+    local v45 = p44 and Color3.fromRGB(35, 251, 255) or Color3.new()
+    if p43.Type == "World" then
+        local v46 = u32[p43.Name]:FindFirstChild("World")
+        if v46 then
+            v46.Backing.ImageColor3 = v45
+            return
+        end
+    else
+        u39[p43.Name].Backing.ImageColor3 = v45
+    end
+end
+local function u77(p48, p49) --[[Anonymous function at line 111]]
+    --[[
+    Upvalues:
+        [1] = u9
+        [2] = u35
+        [3] = u31
+        [4] = u25
+        [5] = u30
+        [6] = u29
+        [7] = u32
+        [8] = u34
+        [9] = u39
+        [10] = u33
+        [11] = u41
+        [12] = u5
+        [13] = u42
+        [14] = u47
+        [15] = u37
+        [16] = u36
+    --]]
+    local v50 = u9:Get()
+    if v50 then
+        local v51 = u35[p48]
+        if v51 then
+            local v52 = v51.Selected
+            local v53 = u31.ViewportSize.Y / 2
+            local v54 = workspace.Worlds[v52.World]:GetAttribute("Height")
+            local v55 = {}
+            local v56 = false
+            local v57 = 0
+            local v58 = 0
+            for v59, v60 in u25 do
+                v55[v60.Order] = v59
+            end
+            for _, v61 in v55 do
+                local _ = u25[v61]
+                v56 = v61 == v52.World and true or v56
+                if not v56 then
+                    v57 = v57 + u30.Worlds[v61].Size.Y.Offset
+                end
+            end
+            local v62 = Vector2.new
+            local v63 = v51.Element.Parent
+            local v64 = v51.Element.Object
+            local v65 = u29.UIScale.Scale
+            local v66 = u32.AbsoluteCanvasSize.Y - v63.Size.Y.Offset * v65
+            local v67 = v63.Size.Y.Offset
+            local v68 = v64.Position.Y.Offset
+            local v69 = v62(0, v66 + (v67 - math.abs(v68)) * v65 - v57 - v53)
+            if v52.Type == "World" then
+                u34.Parent = nil
+            else
+                local v70 = workspace.Worlds[v52.World].Islands:FindFirstChild(v52.Name)
+                v58 = v70 and v70:GetAttribute("Height") or 0
+                u34.Parent = u39[v52.Name]
+            end
+            local v71 = (1 - v58 / v54) * 0.8 + 0.1
+            if p49 then
+                u32.CanvasPosition = v69
+                u33.Position = UDim2.fromScale(0, v71)
+                u41.Value = v58
+            else
+                u5:Create(u33, u42, {
+                    ["Position"] = UDim2.fromScale(0, v71)
+                }):Play()
+                u5:Create(u32, u42, {
+                    ["CanvasPosition"] = v69
+                }):Play()
+                u5:Create(u41, u42, {
+                    ["Value"] = v58
+                }):Play()
+            end
+            local v72
+            if v52.Type == "World" then
+                v72 = v50.WorldsUnlocked[v52.World] ~= nil
+            else
+                v72 = v50.AreasUnlocked[v52.Name] ~= nil
+            end
+            u30.Teleport.Visible = v72
+            u47(u37, false)
+            u47(v52, true)
+            local v73 = u30.Arrows.Down
+            local v74 = p48 > 1 and 0 or 0.75
+            v73.Button.BackgroundTransparency = v74
+            v73.Button.UIStroke.Transparency = v74
+            v73.Button.Label.ImageTransparency = v74
+            local v75 = u30.Arrows.Up
+            local v76 = u35[p48 + 1] ~= nil and 0 or 0.75
+            v75.Button.BackgroundTransparency = v76
+            v75.Button.UIStroke.Transparency = v76
+            v75.Button.Label.ImageTransparency = v76
+            u37 = v52
+            u36 = p48
+        end
+    else
+        return
+    end
+end
+local u78 = u30.Worlds["The Overworld"].World.VIP
+function u38.GetLocation(_) --[[Anonymous function at line 230]]
+    --[[
+    Upvalues:
+        [1] = u19
+        [2] = u28
+        [3] = u21
+    --]]
+    local v79 = u19:GetPlayerWorld(u28)
+    local v80 = workspace.Worlds[v79]
+    local v81 = v80:FindFirstChild("Islands")
+    local v82 = u21:GetRootPart(u28)
+    local v83 = {}
+    local v84 = v80:FindFirstChild("Spawn")
+    if v84 then
+        v83[v79] = v84.Position.Y
+    end
+    if v81 then
+        for _, v85 in v81:GetChildren() do
+            if v85:IsA("Folder") then
+                v83[v85.Name] = v85.Island:GetPivot().Position.Y
+            end
+        end
+    end
+    local v86 = (1 / 0)
+    if v82 then
+        for v87, v88 in v83 do
+            local v89 = v88 - v82.Position.Y
+            local v90 = math.abs(v89)
+            if v90 < v86 then
+                v79 = v87
+                v86 = v90
+            end
+        end
+    end
+    return v79
+end
+function u38.Open(_, p91) --[[Anonymous function at line 264]]
+    --[[
+    Upvalues:
+        [1] = u30
+        [2] = u38
+        [3] = u35
+        [4] = u22
+        [5] = u77
+    --]]
+    local v92 = u30.Visible == false
+    u30.Visible = true
+    local v93 = p91 or u38:GetLocation()
+    local v94 = 1
+    if v93 then
+        for v95, v96 in u35 do
+            if v96.Selected.Name == v93 then
+                v94 = v95
+                break
+            end
+        end
+    end
+    u22(false)
+    u77(v94, v92)
+end
+local u97 = u36
+local u98 = u37
+local u99 = {}
+local u100 = {}
+local function v113() --[[Anonymous function at line 186]]
+    --[[
+    Upvalues:
+        [1] = u9
+        [2] = u39
+        [3] = u78
+        [4] = u30
+    --]]
+    local v101 = u9:Get()
+    if not v101 then
+        return
+    end
+    local v102 = false
+    local v103 = false
+    for _, v104 in v101.MasteryUpgrades do
+        if v104.Type == "QuickCollect" then
+            v102 = v104.Action == "All" and true or v102
+            v103 = true
+            break
+        end
+    end
+    for v105, v106 in u39 do
+        local v107 = v101.AreasUnlocked[v105] ~= nil
+        v106.Activities.Visible = v107
+        v106.Label.Text = v107 and v105 and v105 or "???"
+        v106.Locked.Visible = not v107
+        v106.Button.Icon.Label.ImageColor3 = v107 and Color3.new(1, 1, 1) or Color3.new()
+        v106.Button.ImageColor3 = v106.Button.Icon.Label.ImageColor3
+        local v108 = v106.Auto.Button
+        local v109
+        if v107 then
+            if v106.Button.Icon:FindFirstChild("Timer") == nil then
+                v109 = false
+            else
+                v109 = v103
+            end
+        else
+            v109 = v107
+        end
+        v108.Visible = v109
+        if not v107 then
+            local v110 = v106.Button.Icon:FindFirstChildOfClass("TextLabel")
+            if v110 then
+                v110.Visible = false
+            end
+            v106.Button.Icon.Label.ImageTransparency = 0
+        end
+    end
+    local v111 = u78:FindFirstChildOfClass("TextLabel")
+    u78.Visible = v101.Passes.VIP == true
+    local v112 = u78.Auto.Button
+    if v111 == nil then
+        v103 = false
+    end
+    v112.Visible = v103
+    u30.QuickCollect.Visible = v102
+end
+for _, u117 in v26.from(u32:GetChildren()):filter(function(p114) --[[Anonymous function at line 289]]
+    return p114:IsA("Frame")
+end):sort(function(p115, p116) --[[Anonymous function at line 292]]
+    return p115.LayoutOrder > p116.LayoutOrder
+end):table() do
+    local v118 = workspace.Worlds:FindFirstChild(u117.Name)
+    local v119
+    if v118 then
+        v119 = v118:FindFirstChild("Islands")
+    else
+        v119 = v118
+    end
+    if v119 then
+        local v120 = v118:FindFirstChild("FastTravel")
+        if v120 then
+            v20:Bind(v120, function() --[[Anonymous function at line 305]]
+                --[[
+                Upvalues:
+                    [1] = u28
+                    [2] = u17
+                    [3] = u38
+                --]]
+                if not u28.PlayerGui:FindFirstChild("TransitionGui") then
+                    u17("Loading Galaxy", function() --[[Anonymous function at line 309]]
+                        --[[
+                        Upvalues:
+                            [1] = u38
+                        --]]
+                        u38:Open()
+                    end)
+                end
+            end)
+        end
+        local v121 = {}
+        for _, u122 in u117.Islands:GetChildren() do
+            if v119:FindFirstChild(u122.Name) then
+                for _, u123 in u122.Activities:GetChildren() do
+                    if u123:IsA("ImageButton") then
+                        local u124 = u123:GetAttribute("Description")
+                        local u125 = u123:GetAttribute("Type")
+                        if u124 and u125 then
+                            v7:OnEnter(u123, function() --[[Anonymous function at line 331]]
+                                --[[
+                                Upvalues:
+                                    [1] = u8
+                                    [2] = u123
+                                    [3] = u125
+                                    [4] = u124
+                                --]]
+                                local v126 = {
+                                    ["Type"] = "Text",
+                                    ["Text"] = u124,
+                                    ["Size"] = 28
+                                }
+                                return u8.new():Width(300):Title(u123.Image, u123.Name, u125):Add(v126):Build()
+                            end)
+                        else
+                            warn((("Missing information for %* in world map"):format(u122.Name)))
+                        end
+                    end
+                end
+                v15(u122.Button, function() --[[Anonymous function at line 344]]
+                    --[[
+                    Upvalues:
+                        [1] = u38
+                        [2] = u122
+                    --]]
+                    u38:Open(u122.Name)
+                end)
+                table.insert(v121, u122)
+                u39[u122.Name] = u122
+            end
+        end
+        table.sort(v121, function(p127, p128) --[[Anonymous function at line 352]]
+            return p127.LayoutOrder < p128.LayoutOrder
+        end)
+        local v129 = {
+            ["Selected"] = {
+                ["Type"] = "World",
+                ["Name"] = u117.Name,
+                ["World"] = u117.Name
+            },
+            ["Element"] = {
+                ["Parent"] = u117,
+                ["Object"] = u117.World
+            }
+        }
+        table.insert(u35, v129)
+        for _, v130 in v121 do
+            local v131 = {
+                ["Selected"] = {
+                    ["Type"] = "Island",
+                    ["Name"] = v130.Name,
+                    ["World"] = u117.Name
+                },
+                ["Element"] = {
+                    ["Parent"] = u117,
+                    ["Object"] = v130
+                }
+            }
+            table.insert(u35, v131)
+        end
+        v15(u117.World.Button, function() --[[Anonymous function at line 374]]
+            --[[
+            Upvalues:
+                [1] = u38
+                [2] = u117
+            --]]
+            u38:Open(u117.Name)
+        end)
+    end
+end
+for u132, v133 in u6 do
+    if v133.Island then
+        local v134 = u39[v133.Island]
+        if v134 then
+            local u135 = Instance.new("ImageButton")
+            u135.Size = UDim2.fromOffset(50, 50)
+            u135.BackgroundTransparency = 1
+            u135.Image = v133.Image
+            u135.LayoutOrder = v133.LayoutOrder - 100
+            u135.Parent = v134.Activities
+            u99[u132] = u135
+            v7:OnEnter(u135, function() --[[Anonymous function at line 395]]
+                --[[
+                Upvalues:
+                    [1] = u135
+                    [2] = u8
+                    [3] = u132
+                --]]
+                if u135.ImageColor3 ~= Color3.new(0, 0, 0) then
+                    return u8.fromEgg(u132)
+                end
+            end)
+        end
+    end
+end
+for _, u136 in workspace.Rendered.Chests:GetChildren() do
+    local v137 = u136:GetAttribute("Island")
+    if v137 then
+        local v138 = u39[v137]
+        if v138 then
+            v13(v138.Auto.Button, v14.Button.Pink)
+            v15(v138.Auto.Button, function() --[[Anonymous function at line 424]]
+                --[[
+                Upvalues:
+                    [1] = u18
+                    [2] = u136
+                --]]
+                u18:FireServer("ClaimChest", u136.Name, true)
+            end)
+            u100[u136.Name] = v138
+        end
+    end
+end
+local u139 = false
+v13(u30.QuickCollect.Button, v14.Button.Orange)
+v15(u30.QuickCollect.Button, function() --[[Anonymous function at line 435]]
+    --[[
+    Upvalues:
+        [1] = u139
+        [2] = u18
+    --]]
+    if not u139 then
+        u139 = true
+        for _, v140 in workspace.Rendered.Chests:GetChildren() do
+            u18:FireServer("ClaimChest", v140.Name, true)
+            task.wait(0.1)
+        end
+        task.wait(2)
+        u139 = false
+    end
+end)
+v13(u30.Arrows.Up.Button, v14.Button.Default)
+v15(u30.Arrows.Up.Button, function() --[[Anonymous function at line 450]]
+    --[[
+    Upvalues:
+        [1] = u77
+        [2] = u97
+    --]]
+    u77(u97 + 1)
+end, function() --[[Anonymous function at line 452]]
+    --[[
+    Upvalues:
+        [1] = u30
+    --]]
+    return u30.Arrows.Up.Button.BackgroundTransparency == 0
+end)
+v13(u30.Arrows.Down.Button, v14.Button.Default)
+v15(u30.Arrows.Down.Button, function() --[[Anonymous function at line 457]]
+    --[[
+    Upvalues:
+        [1] = u77
+        [2] = u97
+    --]]
+    u77(u97 - 1)
+end, function() --[[Anonymous function at line 459]]
+    --[[
+    Upvalues:
+        [1] = u30
+    --]]
+    return u30.Arrows.Down.Button.BackgroundTransparency == 0
+end)
+v13(u30.Teleport.Button, v14.Button.Green)
+v15(u30.Teleport.Button, function() --[[Anonymous function at line 466]]
+    --[[
+    Upvalues:
+        [1] = u17
+        [2] = u25
+        [3] = u98
+        [4] = u18
+        [5] = u19
+        [6] = u27
+        [7] = u23
+        [8] = u24
+        [9] = u30
+    --]]
+    u17("Teleporting", function() --[[Anonymous function at line 467]]
+        --[[
+        Upvalues:
+            [1] = u25
+            [2] = u98
+            [3] = u18
+            [4] = u19
+            [5] = u27
+            [6] = u23
+            [7] = u24
+            [8] = u30
+        --]]
+        local v141 = u25[u98.World]
+        local v142 = v141.Track
+        if u98.Type == "World" then
+            local v143 = workspace.Worlds[u98.World]:FindFirstChild("FastTravel")
+            if v143 then
+                v143 = v143:FindFirstChild("Spawn")
+            end
+            if v143 then
+                u18:FireServer("Teleport", v143:GetFullName())
+            end
+        else
+            for _, v144 in v141.Islands do
+                if v144.Name == u98.Name and v144.Track then
+                    v142 = v144.Track
+                    break
+                end
+            end
+            u18:FireServer("Teleport", u19.toIslandLocation(u98.World, u98.Name))
+        end
+        u27:SetTrack(v142)
+        u23:EnableMaster()
+        u23:Enable()
+        u24:Update()
+        u30.Visible = false
+    end)
+end)
+u41:GetPropertyChangedSignal("Value"):Connect(function() --[[Anonymous function at line 497]]
+    --[[
+    Upvalues:
+        [1] = u33
+        [2] = u16
+        [3] = u41
+    --]]
+    local v145 = u33.Label
+    local v146 = u16
+    local v147 = u41.Value / 5
+    v145.Text = ("%*m"):format((v146(math.floor(v147) * 5)))
+end)
+u9:ConnectDataChanged("EggsOpened", function(p148) --[[Anonymous function at line 501]]
+    --[[
+    Upvalues:
+        [1] = u99
+        [2] = u6
+    --]]
+    for v149, v150 in u99 do
+        v150.ImageColor3 = (u6[v149].Island == nil or p148.EggsOpened[v149] ~= nil) and Color3.new(1, 1, 1) or Color3.new()
+    end
+end)
+function u38.IsOpen(_) --[[Anonymous function at line 511]]
+    --[[
+    Upvalues:
+        [1] = u30
+    --]]
+    return u30.Visible
+end
+function u38.Close(_) --[[Anonymous function at line 515]]
+    --[[
+    Upvalues:
+        [1] = u30
+    --]]
+    u30.Visible = false
+end
+v13(u30.Close, v14.Button.Red)
+v15(u30.Close, function() --[[Anonymous function at line 521]]
+    --[[
+    Upvalues:
+        [1] = u38
+    --]]
+    u38:Close()
+end)
+v13(u78.Auto.Button, v14.Button.Pink)
+v15(u78.Auto.Button, function() --[[Anonymous function at line 527]]
+    --[[
+    Upvalues:
+        [1] = u18
+    --]]
+    u18:FireServer("ClaimChest", "Infinity Chest", true)
+end)
+u9:ConnectDataChanged({ "AreasUnlocked", "MasteryUpgrades", "Passes" }, v113)
+u9:ConnectDataChanged("WorldsUnlocked", function(p151) --[[Anonymous function at line 533]]
+    --[[
+    Upvalues:
+        [1] = u30
+    --]]
+    for _, v152 in u30.Worlds:GetChildren() do
+        if v152:IsA("Frame") then
+            local v153 = p151.WorldsUnlocked[v152.Name] == true
+            v152.Locked.Visible = not v153
+            local v154 = v152:FindFirstChild("World")
+            if v154 then
+                v154.Button.ImageColor3 = v153 and Color3.new(1, 1, 1) or Color3.new()
+                v154.Button.Locked.Visible = not v153
+            end
+        end
+    end
+end)
+local u155 = false
+local u156 = Vector2.new()
+local u157 = u97
+u30.Visible = false
+u30.Worlds.ScrollingEnabled = false
+u30:GetPropertyChangedSignal("Visible"):Connect(function() --[[Anonymous function at line 554]]
+    --[[
+    Upvalues:
+        [1] = u30
+        [2] = u40
+        [3] = u10
+        [4] = u9
+        [5] = u11
+        [6] = u100
+        [7] = u78
+        [8] = u4
+        [9] = u34
+        [10] = u22
+        [11] = u155
+    --]]
+    if u30.Visible then
+        local u158 = 0
+        u40:Add(u10(0.25, function() --[[Anonymous function at line 557]]
+            --[[
+            Upvalues:
+                [1] = u9
+                [2] = u11
+                [3] = u100
+                [4] = u78
+            --]]
+            local v159 = u9:Get()
+            if v159 then
+                local v160 = u11.now()
+                for v161, v162 in u100 do
+                    if v159.AreasUnlocked[v162.Name] then
+                        local v163 = (v159.Cooldowns[v161] or 0) - v160
+                        v162.Button.Icon.Timer.Visible = v163 > 0
+                        v162.Button.Icon.Label.ImageTransparency = v163 > 0 and 0.35 or 0
+                        v162.Button.Icon.Timer.Text = u11.formatTime(v163)
+                        v162.Auto.Visible = v163 <= 0
+                    end
+                end
+                local v164 = (v159.Cooldowns["Infinity Chest"] or 0) - v160
+                u78.Timer.Visible = v164 > 0
+                u78.Label.ImageTransparency = v164 > 0 and 0.35 or 0
+                u78.Timer.Text = u11.formatTime(v164)
+                u78.Auto.Visible = v164 <= 0
+            end
+        end))
+        u40:Add(u4.Heartbeat:Connect(function(p165) --[[Anonymous function at line 580]]
+            --[[
+            Upvalues:
+                [1] = u34
+                [2] = u158
+            --]]
+            if u34.Parent then
+                local v166 = u158 * 3
+                local v167 = (math.sin(v166) + 1) / 12 + 1
+                local v168 = u34.Parent.Size.X.Offset * 0.75 * v167
+                u34.Size = UDim2.fromOffset(v168, v168)
+                local v169 = u34
+                local v170 = u158 * 2
+                v169.Rotation = (math.floor(v170) % 2 - 1) * 45
+                u158 = u158 + p165
+            end
+        end))
+    else
+        u40:Cleanup()
+        u22(true)
+    end
+    u155 = false
+end)
+u3.InputChanged:Connect(function(p171, _) --[[Anonymous function at line 599]]
+    --[[
+    Upvalues:
+        [1] = u30
+        [2] = u77
+        [3] = u97
+    --]]
+    if u30.Visible ~= false then
+        if p171.UserInputType == Enum.UserInputType.MouseWheel then
+            local v172 = p171.Position.Z > 0 and 1 or -1
+            if v172 == 1 and u30.Arrows.Up.Button.BackgroundTransparency ~= 0 then
+                return
+            end
+            if v172 == -1 and u30.Arrows.Down.Button.BackgroundTransparency ~= 0 then
+                return
+            end
+            u77(u97 + v172)
+        end
+    end
+end)
+u3.InputBegan:Connect(function(p173) --[[Anonymous function at line 614]]
+    --[[
+    Upvalues:
+        [1] = u30
+        [2] = u155
+        [3] = u157
+        [4] = u97
+        [5] = u156
+        [6] = u3
+    --]]
+    if u30.Visible == false then
+        return
+    elseif p173.UserInputType == Enum.UserInputType.Touch then
+        u155 = true
+        u157 = u97
+        u156 = u3:GetMouseLocation()
+    end
+end)
+u3.InputEnded:Connect(function(p174) --[[Anonymous function at line 626]]
+    --[[
+    Upvalues:
+        [1] = u30
+        [2] = u155
+    --]]
+    if u30.Visible == false then
+        return
+    elseif p174.UserInputType == Enum.UserInputType.Touch then
+        u155 = false
+    end
+end)
+local u175 = 0
+u4.Heartbeat:Connect(function() --[[Anonymous function at line 638]]
+    --[[
+    Upvalues:
+        [1] = u30
+        [2] = u155
+        [3] = u175
+        [4] = u3
+        [5] = u156
+        [6] = u77
+        [7] = u157
+    --]]
+    if u30.Visible == false then
+        return
+    elseif u155 == false then
+        u175 = 0
+    else
+        local v176 = (u3:GetMouseLocation().Y - u156.Y) / 100
+        local v177 = math.floor(v176)
+        if v177 ~= u175 then
+            u77(u157 + v177)
+            u175 = v177
+        end
+    end
+end)
+return u38

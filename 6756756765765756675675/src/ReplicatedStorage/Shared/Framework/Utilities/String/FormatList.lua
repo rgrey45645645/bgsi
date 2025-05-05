@@ -1,0 +1,14 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMHCSUqIGFuZCAlKgZmb3JtYXQKJSosIGFuZCAlKgV0YWJsZQZjb25jYXQCLCAKZm9ybWF0TGlzdAACCgEAAAAGAwAABQEEIBwBAAANAQMAAAAAgBMBAACCAQIAHAEAAA0BCQABAACAbwICABMEAAATBQABvAICjQMAAACfAgQCUgECAIIBAgBvAgQApAQHAAAYUIBSBQAAbwYIAIwHAQAcCQAAeAgJAJ8EBQIcBgAAhwUABrwCAo0DAAAAnwIEAlIBAgCCAQIACQIAAAAAAADwPwIAAAAAAAAAQAMBAwIDAwMEAwUEABhQgAMGAAYHARgAAAABAAEAAAEAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAcAAAAAAQAAAQIAA6MAAADAAAAAggACAAEGAAEAAQABGAAFCQEAAAAAARe9VJ3xcWmUJXk+CfcK1rJSrWZXA+5F4k6pVw8cxripT7mD+SoaxD0=
+
+return function(p1) --[[Function name: formatList, line 6]]
+    if #p1 == 1 then
+        return p1[1]
+    elseif #p1 == 2 then
+        return ("%* and %*"):format(p1[1], p1[2])
+    else
+        return ("%*, and %*"):format(table.concat(p1, ", ", 1, #p1 - 1), p1[#p1])
+    end
+end

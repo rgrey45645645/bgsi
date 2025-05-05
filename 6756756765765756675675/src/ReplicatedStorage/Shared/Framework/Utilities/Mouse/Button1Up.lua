@@ -1,0 +1,19 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMRDVVzZXJJbnB1dFR5cGUERW51bQxNb3VzZUJ1dHRvbjEFVG91Y2gERmlyZQRnYW1lEFVzZXJJbnB1dFNlcnZpY2UKR2V0U2VydmljZRFSZXBsaWNhdGVkU3RvcmFnZQdyZXF1aXJlBlNoYXJlZAlGcmFtZXdvcmsHQ2xhc3NlcwZTaWduYWwDbmV3CklucHV0RW5kZWQHQ29ubmVjdAACBAEBAAAAD00BAMIAAAAApAIDAAIAEMDxAQUAAgAAAKQCBQAEABDAmgEFAAIAAAD7AgAAvAIC3QYAAACfAgIBggABAAcDAQMCAwMEAgAQwAMEBAQAEMADBQAKAAEYAAABAAAAAAAAAAEAAAACCwAAAAAHAAABAgAjowAAAKQAAQAAAABAbwICALwAABYDAAAAnwADAqQBAQAAAABAbwMEALwBARYDAAAAnwEDAqQCBgAAAFBATQYBEgcAAABNBQYcCAAAAE0EBRgJAAAATQMEHwoAAACfAgICTQMC7wsAAACfAwECTQQArwwAAADABg0AEgADALwEBMcOAAAAnwQDAYIDAgAPAwYEAAAAQAMHAwgDCQMKBAAAUEADCwMMAw0DDgMPAxAGAAMRAQABAAEYAAIAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAgAAAwAAAAAAAAkBAAAAAAHOntKheEkOjfxauDU14BkoOXfHb70uRA5JlJsNUbv4aNhoecFpJZjS
+
+local v1 = game:GetService("UserInputService")
+local v2 = game:GetService("ReplicatedStorage")
+local u3 = require(v2.Shared.Framework.Classes.Signal).new()
+v1.InputEnded:Connect(function(p4) --[[Anonymous function at line 10]]
+    --[[
+    Upvalues:
+        [1] = u3
+    --]]
+    local v5 = p4.UserInputType
+    if v5 == Enum.UserInputType.MouseButton1 or v5 == Enum.UserInputType.Touch then
+        u3:Fire()
+    end
+end)
+return u3

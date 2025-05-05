@@ -1,0 +1,24 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgMTBVNoaW55BCUqJSoETmFtZQZNeXRoaWMHIE15dGhpYwAGZm9ybWF0DkZpbmRGaXJzdENoaWxkBURvZ2d5C0dldFBldE1vZGVsBGdhbWURUmVwbGljYXRlZFN0b3JhZ2UKR2V0U2VydmljZQdyZXF1aXJlBlNoYXJlZAVUeXBlcwZBc3NldHMEUGV0cwZOb3JtYWwAAggBAgAABgMAAAUBBBxNAgC0AAAAAA4CAgD7AQAAZQABAPsBAQBvAwEATQUAugIAAABNBwCkAwAAAA4HAgBvBgQAZQABAG8GBQC8AwONBgAAAJ8DBAJSAgMAUgUCALwDAQMHAAAAnwMDAisDAwBNBAFGCAAAAIIEAgCCAwIACQMBAwIDAwMEAwUDBgMHAwgDCQALCgEYAAAAAAAAAQAAAAAAAAAAAAAAAAEAAAABAQAAAxAAAAAABwAAAQIAHqMAAACkAAEAAAAAQG8CAgC8AAAWAwAAAJ8AAwKkAQUAAABAQE0DABIGAAAATQID7wcAAACfAQICTQMAgQgAAABNAgPoCQAAAG8FCgC8AwIDCwAAAJ8DAwJvBgwAvAQCAwsAAACfBAMCwAUNABIABAASAAMAggUCAA4DCwQAAABAAwwDDQMOBAAAQEADDwMQAxEDEgMTAwgDAQYAAQABAAEYAAIAAAAAAAIAAAAAAAACAAAAAQAAAAEAAAACAAAPAQAAAAABF6Z4Y/1mD0clYhL3ZI6IW9TZBcoaicb/66eqq7PADPDxYGduS/O7Jw==
+
+local v1 = game:GetService("ReplicatedStorage")
+require(v1.Shared.Types)
+local v2 = v1.Assets.Pets
+local u3 = v2:FindFirstChild("Normal")
+local u4 = v2:FindFirstChild("Shiny")
+return function(p5) --[[Function name: GetPetModel, line 11]]
+    --[[
+    Upvalues:
+        [1] = u4
+        [2] = u3
+    --]]
+    local v6
+    if p5.Shiny then
+        v6 = u4
+    else
+        v6 = u3
+    end
+    return v6:FindFirstChild((("%*%*"):format(p5.Name, p5.Mythic and " Mythic" or ""))) or v6.Doggy
+end

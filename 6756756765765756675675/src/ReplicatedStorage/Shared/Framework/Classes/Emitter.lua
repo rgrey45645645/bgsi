@@ -1,0 +1,189 @@
+--devbgascension
+
+-- Bytecode (Base64):
+-- BgNpB191cGRhdGUFdGFibGUFY2xvbmUMc2V0bWV0YXRhYmxlCUhlYXJ0YmVhdAdDb25uZWN0C19jb25uZWN0aW9uCl9wYXJ0aWNsZXMHX2J1ZmZlcgZSYW5kb20DbmV3BF9ybmcGQWN0aXZlCEluc3RhbmNlBUZyYW1lCVBhcnRpY2xlcwROYW1lClNlbGVjdGFibGUWQmFja2dyb3VuZFRyYW5zcGFyZW5jeQVVRGltMglmcm9tU2NhbGUEU2l6ZQdfaG9sZGVyB0VuYWJsZWQHVGV4dHVyZQRSYXRlBUNvbG9yEUVtaXNzaW9uRGlyZWN0aW9uCExpZmV0aW1lCFJvdFNwZWVkCFJvdGF0aW9uB1ZlY3RvcjIMQWNjZWxlcmF0aW9uAVgBWQREcmFnCUtleXBvaW50cxZOdW1iZXJTZXF1ZW5jZUtleXBvaW50BFRpbWUFVmFsdWUIRW52ZWxvcGUOTnVtYmVyU2VxdWVuY2ULTnVtYmVyUmFuZ2UFU3BlZWQDTWluA01heAtTcHJlYWRBbmdsZQxUcmFuc3BhcmVuY3kHWk9mZnNldAZaSW5kZXgLZnJvbUVtaXR0ZXICb3MFY2xvY2sGUGFyZW50BGdhbWUOSXNEZXNjZW5kYW50T2YEbWF0aAVmbG9vcgxHZW5lcmF0ZUdVSUQKSW1hZ2VMYWJlbAtBbmNob3JQb2ludApOZXh0TnVtYmVyA3JhZANjb3MDc2luBUJlZ2FuBk9mZnNldAlEaXJlY3Rpb24HRGVzdHJveQpmcm9tT2Zmc2V0CFBvc2l0aW9uFmdldE51bWJlclNlcXVlbmNlVmFsdWUFSW1hZ2URSW1hZ2VUcmFuc3BhcmVuY3kVZ2V0Q29sb3JTZXF1ZW5jZVZhbHVlC0ltYWdlQ29sb3IzCFNldFNjYWxlBEVtaXQFY2xlYXIFQ2xlYXIKRGlzY29ubmVjdApSdW5TZXJ2aWNlCkdldFNlcnZpY2ULSHR0cFNlcnZpY2URUmVwbGljYXRlZFN0b3JhZ2UHcmVxdWlyZQZTaGFyZWQJRnJhbWV3b3JrCVV0aWxpdGllcwxTZXF1ZW5jZVV0aWwGQ2xpZW50CUxvd0RldGFpbAdfX2luZGV4L3JieGFzc2V0Oi8vdGV4dHVyZXMvcGFydGljbGVzL3NwYXJrbGVzX21haW4uZGRzDUNv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
+
+local u1 = game:GetService("RunService")
+local u2 = game:GetService("HttpService")
+local v3 = game:GetService("ReplicatedStorage")
+local u4 = require(v3.Shared.Framework.Utilities.SequenceUtil)
+local u5 = require(v3.Client.LowDetail)
+local u6 = {}
+u6.__index = u6
+local u7 = {
+    ["Enabled"] = true,
+    ["Texture"] = "rbxasset://textures/particles/sparkles_main.dds",
+    ["Transparency"] = NumberSequence.new(0),
+    ["Rate"] = 10,
+    ["Lifetime"] = NumberRange.new(1, 2),
+    ["Size"] = NumberSequence.new(50),
+    ["EmissionDirection"] = Vector2.new(0, -1),
+    ["Speed"] = NumberRange.new(50, 100),
+    ["Acceleration"] = Vector2.new(0, 0),
+    ["Color"] = ColorSequence.new(Color3.fromRGB(255, 255, 255)),
+    ["Drag"] = 0,
+    ["SpreadAngle"] = 0,
+    ["Rotation"] = NumberRange.new(0),
+    ["RotSpeed"] = NumberRange.new(0),
+    ["ZIndex"] = 1
+}
+function u6.new() --[[Anonymous function at line 90]]
+    --[[
+    Upvalues:
+        [1] = u7
+        [2] = u6
+        [3] = u1
+    --]]
+    local v8 = table.clone(u7)
+    local v9 = u6
+    local u10 = setmetatable(v8, v9)
+    u10._connection = u1.Heartbeat:Connect(function(p11) --[[Anonymous function at line 93]]
+        --[[
+        Upvalues:
+            [1] = u10
+        --]]
+        u10:_update(p11)
+    end)
+    u10._particles = {}
+    u10._buffer = 0
+    u10._rng = Random.new()
+    u10.Active = 0
+    local v12 = Instance.new("Frame")
+    v12.Name = "Particles"
+    v12.Active = false
+    v12.Selectable = false
+    v12.BackgroundTransparency = 1
+    v12.Size = UDim2.fromScale(1, 1)
+    u10._holder = v12
+    return u10
+end
+local u13 = {
+    [Enum.NormalId.Top] = Vector2.new(0, -1),
+    [Enum.NormalId.Bottom] = Vector2.new(0, 1),
+    [Enum.NormalId.Left] = Vector2.new(-1, 0),
+    [Enum.NormalId.Right] = Vector2.new(1, 0),
+    [Enum.NormalId.Front] = Vector2.new(0, -1),
+    [Enum.NormalId.Back] = Vector2.new(0, -1)
+}
+function u6.fromEmitter(p14, p15) --[[Anonymous function at line 128]]
+    --[[
+    Upvalues:
+        [1] = u6
+        [2] = u13
+    --]]
+    local v16 = u6.new()
+    v16.Enabled = p14.Enabled
+    v16.Texture = p14.Texture
+    v16.Rate = p14.Rate
+    v16.Color = p14.Color
+    v16.EmissionDirection = u13[p14.EmissionDirection]
+    v16.Lifetime = p14.Lifetime
+    v16.RotSpeed = p14.RotSpeed
+    v16.Rotation = p14.Rotation
+    v16.Acceleration = Vector2.new(p14.Acceleration.X, -p14.Acceleration.Y) * 65
+    v16.Drag = p14.Drag
+    local v17 = {}
+    for v18, v19 in p14.Size.Keypoints do
+        v17[v18] = NumberSequenceKeypoint.new(v19.Time, v19.Value * (p15 or 85), v19.Envelope * (p15 or 85))
+    end
+    v16.Size = NumberSequence.new(v17)
+    v16.Speed = NumberRange.new(p14.Speed.Min * 65, p14.Speed.Max * 65)
+    v16.SpreadAngle = (p14.SpreadAngle.X + p14.SpreadAngle.Y) * 0.5
+    v16.Transparency = p14.Transparency
+    v16.ZIndex = p14.ZOffset + 1
+    return v16
+end
+function u6._update(p20, p21) --[[Anonymous function at line 161]]
+    --[[
+    Upvalues:
+        [1] = u2
+        [2] = u4
+    --]]
+    local v22 = os.clock()
+    if p20.Parent and p20.Parent:IsDescendantOf(game) then
+        p20._holder.Parent = p20.Parent
+        p20._holder.ZIndex = p20.ZIndex
+    end
+    if p20.Enabled then
+        local v23 = p20._buffer + p21 * p20.Rate
+        for _ = 1, math.floor(v23) do
+            local v24 = u2:GenerateGUID(false)
+            local v25 = Instance.new("ImageLabel")
+            v25.AnchorPoint = Vector2.new(0.5, 0.5)
+            v25.BackgroundTransparency = 1
+            local v26 = p20.EmissionDirection
+            local v27 = p20._rng:NextNumber(-p20.SpreadAngle, p20.SpreadAngle)
+            local v28 = math.rad(v27)
+            local v29 = Vector2.new(math.cos(v28) * v26.X - math.sin(v28) * v26.Y, math.sin(v28) * v26.X + math.cos(v28) * v26.Y)
+            p20.Active = p20.Active + 1
+            p20._particles[v24] = {
+                ["Began"] = v22,
+                ["Lifetime"] = p20._rng:NextNumber(p20.Lifetime.Min, p20.Lifetime.Max),
+                ["Offset"] = UDim2.fromScale(p20._rng:NextNumber(), p20._rng:NextNumber()),
+                ["Direction"] = v29,
+                ["Speed"] = p20._rng:NextNumber(p20.Speed.Min, p20.Speed.Max),
+                ["Acceleration"] = p20.Acceleration,
+                ["Drag"] = p20.Drag,
+                ["Rotation"] = p20._rng:NextNumber(p20.Rotation.Min, p20.Rotation.Max),
+                ["RotSpeed"] = p20._rng:NextNumber(p20.RotSpeed.Min, p20.RotSpeed.Max),
+                ["Instance"] = v25
+            }
+        end
+        p20._buffer = v23 % 1
+    end
+    for v30, v31 in p20._particles do
+        local v32 = v22 - v31.Began
+        local v33 = v31.Instance
+        if v31.Lifetime <= v32 then
+            v33:Destroy()
+            p20.Active = p20.Active - 1
+            p20._particles[v30] = nil
+        else
+            local v34 = v31.Direction * v31.Speed
+            local v35 = v31.Acceleration
+            local v36 = v31.Drag
+            local v37 = v34 * v32 + 0.5 * v35 * v32 ^ 2
+            if v36 ~= 0 then
+                v37 = (1 - 2 ^ (-(v32 * v36))) * v34 / v36 / 0.6931471805599453 + 0.5 * v35 * v32 ^ 2
+            end
+            v33.Position = v31.Offset + UDim2.fromOffset(v37.X, v37.Y)
+            v33.Rotation = v31.Rotation + v31.RotSpeed * v32
+            local v38 = v32 / v31.Lifetime
+            local v39 = u4.getNumberSequenceValue(p20.Size, v38)
+            v33.Size = UDim2.fromOffset(v39, v39)
+            v33.Image = p20.Texture
+            v33.ImageTransparency = u4.getNumberSequenceValue(p20.Transparency, v38)
+            v33.ImageColor3 = u4.getColorSequenceValue(p20.Color, v38)
+            v33.Parent = p20._holder
+        end
+    end
+end
+function u6.SetScale(p40, p41) --[[Anonymous function at line 240]]
+    local v42 = {}
+    for v43, v44 in p40.Size.Keypoints do
+        v42[v43] = NumberSequenceKeypoint.new(v44.Time, v44.Value * p41, v44.Envelope * p41)
+    end
+    p40.Size = NumberSequence.new(v42)
+end
+function u6.Emit(p45, p46) --[[Anonymous function at line 253]]
+    --[[
+    Upvalues:
+        [1] = u5
+    --]]
+    if not u5.Enabled then
+        p45._buffer = p45._buffer + p46
+        p45:_update(0)
+    end
+end
+function u6.Clear(p47) --[[Anonymous function at line 262]]
+    for _, v48 in p47._particles do
+        v48.Instance:Destroy()
+    end
+    table.clear(p47._particles)
+end
+function u6.Destroy(p49) --[[Anonymous function at line 270]]
+    p49._connection:Disconnect()
+    p49._holder:Destroy()
+    p49:Clear()
+end
+return u6
